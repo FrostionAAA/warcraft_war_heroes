@@ -10319,6 +10319,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="1"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
             <option name="isConstruction" value="true"/>
@@ -10383,6 +10384,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="2"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="2"/>
             <option name="isConstruction" value="true"/>
@@ -10492,6 +10494,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="1"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
             <option name="isConstruction" value="true"/>
@@ -10568,6 +10571,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="2"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="2"/>
             <option name="isConstruction" value="true"/>
@@ -45466,7 +45470,7 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_13.png"/>1 Battering-Ram completely nullifies the first Wall-Archer of any Factory. A level 1 Factory is therefore best attacked with 1 Battering-Ram.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_14.png"/>1 Siege-Tower will suppress all remaining Wall-Archer attacks by 1 Targeted Power, from 5/10 to 4/10. Level 2+ Factories are therefore best attacked with 1 Battering-Ram and 1-5 Siege-Towers.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_15.png"/>1 Battering-Ram and 5 Siege-Towers completely nullify all 5 Wall-Archers of even a Capital City. One cannot bring more than 1 Battering-Ram and 5 Siege-Towers to a siege.</span><br><br>
-<span style="font-size:11px;color:C0C0C0"><b>Note:</b> All none-built Factories (Capitals, Stronghold, Manor, Keep, Tower and Ports) can only be damaged by Bombardment, not destroyed. Capitals will furthermore be set on fire (reaching max damaged) if lost to the enemy.</span><br>
+<span style="font-size:11px;color:C0C0C0"><b>Note:</b> All none-built Factories (Capitals, Stronghold, Manor, Keep, Tower and Ports) can only be damaged by Bombardment, not destroyed. Capitals, Stronghold, Manor, Keep and Tower will furthermore be set on fire (reaching max damage) if lost to the enemy.</span><br>
 <center><img src="NotesBar09.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Heroes</b></span><br><br>
 <center><img src="NotesHeroes.png"/></center><br>
