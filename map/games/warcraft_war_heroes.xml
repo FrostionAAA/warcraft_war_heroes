@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="Warcraft: War Heroes" version="0.1.2"/>
+  <info name="Warcraft: War Heroes" version="0.1.3"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="2.0"/>
   <diceSides value="10"/>
@@ -430,7 +430,7 @@
       <element name="Gargoyles"/>
     </variable>
     
-    <variable name="AllAirBridgeCrossingUnits">
+    <variable name="AllAirwayCrossingUnits">
       <element name="Ballista-Shot"/>
       <element name="Catapult-Shot"/>
       <element name="Trebuchet-Shot"/>
@@ -445,6 +445,7 @@
       <element name="Flying-Machine"/>
       <element name="Gunship"/>
       <element name="Gyrocopter"/>
+      <element name="Spider-Tank"/>
       <element name="Hippogryph"/>
       <element name="Wind-Hexer"/>
       <element name="Zeppelin"/>
@@ -4248,13 +4249,13 @@
             <result resourceOrUnit="Bowmen" quantity="1"/>
         </productionRule>
         <productionRule name="buyCrossbowmen">
-            <cost resource="PUs" quantity="16"/>
+            <cost resource="PUs" quantity="15"/>
             <cost resource="Food" quantity="10"/>
             <result resourceOrUnit="Crossbowmen" quantity="1"/>
         </productionRule>
         <productionRule name="buyCavalry">
             <cost resource="PUs" quantity="40"/>
-            <cost resource="Food" quantity="10"/>
+            <cost resource="Food" quantity="15"/>
             <result resourceOrUnit="Cavalry" quantity="1"/>
         </productionRule>        
 
@@ -4339,42 +4340,42 @@
 
         <productionRule name="buyGuard-Tower">
             <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="20"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Guard-Tower" quantity="1"/>
         </productionRule>
         <productionRule name="buyWatch-Tower">
             <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="20"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Watch-Tower" quantity="1"/>
         </productionRule>
         <productionRule name="buyFort">
-            <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="30"/>
+            <cost resource="PUs" quantity="25"/>
+            <cost resource="Gold" quantity="25"/>
             <result resourceOrUnit="Fort" quantity="1"/>
         </productionRule>
         <productionRule name="buyOutpost">
-            <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="30"/>
+            <cost resource="PUs" quantity="25"/>
+            <cost resource="Gold" quantity="25"/>
             <result resourceOrUnit="Outpost" quantity="1"/>
         </productionRule>
         <productionRule name="buyGarrison">
-            <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="40"/>
+            <cost resource="PUs" quantity="20"/>
+            <cost resource="Gold" quantity="20"/>
             <result resourceOrUnit="Garrison" quantity="1"/>
         </productionRule>
         <productionRule name="buyWar-Camp">
-            <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="40"/>
+            <cost resource="PUs" quantity="20"/>
+            <cost resource="Gold" quantity="20"/>
             <result resourceOrUnit="War-Camp" quantity="1"/>
         </productionRule>
         <productionRule name="buyCastle">
-            <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="50"/>
+            <cost resource="PUs" quantity="15"/>
+            <cost resource="Gold" quantity="15"/>
             <result resourceOrUnit="Castle" quantity="1"/>
         </productionRule>
         <productionRule name="buyGreat-Hall">
-            <cost resource="PUs" quantity="30"/>
-            <cost resource="Gold" quantity="50"/>
+            <cost resource="PUs" quantity="15"/>
+            <cost resource="Gold" quantity="15"/>
             <result resourceOrUnit="Great-Hall" quantity="1"/>
         </productionRule>
         <productionRule name="buyAlliance-Capital">
@@ -4392,7 +4393,7 @@
             <result resourceOrUnit="Workboat" quantity="1"/>
         </productionRule>
         <productionRule name="buyTroopship">
-            <cost resource="PUs" quantity="25"/>
+            <cost resource="PUs" quantity="28"/>
             <cost resource="Wood" quantity="20"/>
             <result resourceOrUnit="Troopship" quantity="1"/>
         </productionRule>
@@ -4467,7 +4468,7 @@
         </productionRule>
         <productionRule name="buyPriest">
             <cost resource="PUs" quantity="30"/>
-            <cost resource="Mana" quantity="50"/>
+            <cost resource="Mana" quantity="100"/>
             <result resourceOrUnit="Priest" quantity="1"/>
         </productionRule>
         <productionRule name="buyAirship">
@@ -4492,7 +4493,7 @@
             <result resourceOrUnit="Mountain-King" quantity="1"/>
         </productionRule>
         <productionRule name="buyMortar">
-            <cost resource="PUs" quantity="25"/>
+            <cost resource="PUs" quantity="30"/>
             <cost resource="Gold" quantity="50"/>
             <result resourceOrUnit="Mortar" quantity="1"/>
         </productionRule>
@@ -4531,18 +4532,18 @@
             <result resourceOrUnit="Manabots" quantity="1"/>
         </productionRule>
         <productionRule name="buySpider-Tank">
-            <cost resource="PUs" quantity="25"/>
+            <cost resource="PUs" quantity="26"/>
             <cost resource="Gold" quantity="50"/>
             <result resourceOrUnit="Spider-Tank" quantity="1"/>
         </productionRule>
         <productionRule name="buySubmarine">
-            <cost resource="PUs" quantity="30"/>
+            <cost resource="PUs" quantity="28"/>
             <cost resource="Gold" quantity="50"/>
             <result resourceOrUnit="Submarine" quantity="1"/>
         </productionRule>
 
         <productionRule name="buyDestroyer">
-            <cost resource="PUs" quantity="25"/>
+            <cost resource="PUs" quantity="26"/>
             <cost resource="Gold" quantity="50"/>
             <result resourceOrUnit="Destroyer" quantity="1"/>
         </productionRule>
@@ -4634,7 +4635,7 @@
         </productionRule>
         <productionRule name="buyFire-Thrower">
             <cost resource="PUs" quantity="30"/>
-            <cost resource="Oil" quantity="100"/>
+            <cost resource="Oil" quantity="50"/>
             <result resourceOrUnit="Fire-Thrower" quantity="1"/>
         </productionRule>
         <productionRule name="buyFire-Shot">
@@ -4664,12 +4665,12 @@
         </productionRule>
         <productionRule name="buyDire-Troll">
             <cost resource="PUs" quantity="70"/>
-            <cost resource="Gold" quantity="50"/>
+            <cost resource="Gold" quantity="25"/>
             <result resourceOrUnit="Dire-Troll" quantity="1"/>
         </productionRule>
         <productionRule name="buyFire-Canoe">
-            <cost resource="PUs" quantity="25"/>
-            <cost resource="Oil" quantity="50"/>
+            <cost resource="PUs" quantity="20"/>
+            <cost resource="Oil" quantity="25"/>
             <result resourceOrUnit="Fire-Canoe" quantity="1"/>
         </productionRule>
 
@@ -5865,6 +5866,7 @@
             <result resourceOrUnit="Imps" quantity="1"/>
         </productionRule>
         <productionRule name="buySkeletons">
+            <cost resource="PUs" quantity="5"/>
             <cost resource="Mana" quantity="5"/>
             <result resourceOrUnit="Skeletons" quantity="1"/>
         </productionRule>
@@ -6642,99 +6644,99 @@
 
 <!-- Repair rules -->
         <repairRule name="repairGuard-Tower">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Guard-Tower" quantity="1"/>
         </repairRule>
         <repairRule name="repairFort">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Fort" quantity="1"/>
         </repairRule>
         <repairRule name="repairGarrison">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Garrison" quantity="1"/>
         </repairRule>
         <repairRule name="repairCastle">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Castle" quantity="1"/>
         </repairRule>
         <repairRule name="repairAlliance-Capital">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Alliance-Capital" quantity="1"/>
         </repairRule>
         <repairRule name="repairWatch-Tower">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Watch-Tower" quantity="1"/>
         </repairRule>
         <repairRule name="repairOutpost">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Outpost" quantity="1"/>
         </repairRule>
         <repairRule name="repairWar-Camp">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="War-Camp" quantity="1"/>
         </repairRule>
         <repairRule name="repairGreat-Hall">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Great-Hall" quantity="1"/>
         </repairRule>
         <repairRule name="repairHorde-Capital">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Horde-Capital" quantity="1"/>
         </repairRule>
         <repairRule name="repairKeep">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Keep" quantity="1"/>
         </repairRule>
         <repairRule name="repairStronghold">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Stronghold" quantity="1"/>
         </repairRule>
         <repairRule name="repairTower">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Tower" quantity="1"/>
         </repairRule>
         <repairRule name="repairManor">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Manor" quantity="1"/>
         </repairRule>
         <repairRule name="repairAuberdine-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Auberdine-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairBooty-Bay-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Booty-Bay-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairMenethil-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Menethil-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairRatchet-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Ratchet-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairRevantusk-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Revantusk-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairRut-Theran-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Rut-Theran-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairShadowprey-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Shadowprey-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairSouthshore-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Southshore-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairSteamwheedle-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Steamwheedle-Port" quantity="1"/>
         </repairRule>
         <repairRule name="repairTheramore-Port">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Theramore-Port" quantity="1"/>
         </repairRule>
 
@@ -7766,7 +7768,8 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="6"/>
+            <option name="bombingMaxDieSides" value="3"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
@@ -7795,7 +7798,8 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="7"/>
+            <option name="bombingMaxDieSides" value="3"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
@@ -7824,7 +7828,8 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="8"/>
+            <option name="bombingMaxDieSides" value="3"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="7"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
@@ -7893,7 +7898,8 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="9"/>
+            <option name="bombingMaxDieSides" value="4"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="7"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
@@ -7935,7 +7941,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="canProduceXUnits" value="1"/>
             <option name="constructionType" value="Factory"/>
@@ -7958,7 +7964,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="canProduceXUnits" value="1"/>
             <option name="constructionType" value="Factory"/>
@@ -7981,7 +7987,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="10"/>
+            <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="consumesUnits" value="1:Guard-Tower"/>
             <option name="canProduceXUnits" value="2"/>
@@ -8003,7 +8009,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="10"/>
+            <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="consumesUnits" value="1:Watch-Tower"/>
             <option name="canProduceXUnits" value="2"/>
@@ -8025,7 +8031,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="15"/>
+            <option name="maxDamage" value="3"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="consumesUnits" value="1:Fort"/>
             <option name="canProduceXUnits" value="3"/>
@@ -8047,7 +8053,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="15"/>
+            <option name="maxDamage" value="3"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="consumesUnits" value="1:Outpost"/>
             <option name="canProduceXUnits" value="3"/>
@@ -8069,7 +8075,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="20"/>
+            <option name="maxDamage" value="4"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="consumesUnits" value="1:Garrison"/>
             <option name="canProduceXUnits" value="4"/>
@@ -8091,7 +8097,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="20"/>
+            <option name="maxDamage" value="4"/>
             <option name="canDieFromReachingMaxDamage" value="true"/>
             <option name="consumesUnits" value="1:War-Camp"/>
             <option name="canProduceXUnits" value="4"/>
@@ -8114,9 +8120,9 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="25"/>
-            <option name="maxOperationalDamage" value="24"/>
+            <option name="maxDamage" value="5"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="5"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="5"/>
             <option name="isConstruction" value="true"/>
@@ -8137,9 +8143,9 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="25"/>
-            <option name="maxOperationalDamage" value="24"/>
+            <option name="maxDamage" value="5"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="5"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="5"/>
             <option name="isConstruction" value="true"/>
@@ -8485,7 +8491,7 @@
             <option name="isInfrastructure" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Judgment-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -8527,13 +8533,13 @@
             <option name="isInfrastructure" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Agility-Potion" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Rage-Potion" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -8567,7 +8573,7 @@
             <option name="isInfrastructure" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Fire-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -8579,7 +8585,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$"/>
+                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -8593,7 +8599,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Frost-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="Gnomes:any:true:Frost:1"/>
@@ -8604,7 +8610,7 @@
             <option name="destroyedWhenCapturedFrom" value="$AllPlayers$"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Invisibility-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -8678,13 +8684,14 @@
             <option name="isInfrastructure" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Lightning-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
             <option name="bombingMaxDieSides" value="2"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="2"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
@@ -8693,7 +8700,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$"/>
+                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -8708,7 +8715,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Earthquake-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="Orcs:any:true:Earthquake:1"/>
@@ -8747,7 +8754,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Lunar-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="Tauren:any:true:Lunar-Fire:1"/>
@@ -8758,7 +8765,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Solar-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="Tauren:any:true:Solar-Fire:1"/>
@@ -8769,7 +8776,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Root-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="Tauren:any:true:Roots:1"/>
@@ -8834,7 +8841,7 @@
             <option name="requiresUnits" value="Sevis"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Horror-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -8889,7 +8896,7 @@
             <option name="destroyedWhenCapturedFrom" value="$AllPlayers$"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Flame-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -8901,7 +8908,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$"/>
+                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -8911,7 +8918,7 @@
             <option name="maxBuiltPerPlayer" value="1"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Time-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="4"/>
+            <option name="movement" value="1"/>
             <option name="isAir" value="true"/>
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
@@ -9329,8 +9336,8 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Mortar" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="4"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="8"/>
+            <option name="defense" value="3"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="3"/>
             <option name="isAirTransportable" value="true"/>
@@ -9344,10 +9351,11 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="8"/>
+            <option name="bombingMaxDieSides" value="2"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="8"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -9385,7 +9393,8 @@
             <option name="repairsUnits" value="1:Gunship"/>
             <option name="isKamikaze" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="7"/>
+            <option name="bombingMaxDieSides" value="2"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
@@ -9432,9 +9441,6 @@
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
-            <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="5"/>
-            <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="2"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
@@ -9539,7 +9545,7 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Scorpid" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="4"/>
+            <option name="attack" value="5"/>
             <option name="defense" value="8"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="10"/>
@@ -9552,7 +9558,7 @@
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
-                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
@@ -9576,7 +9582,7 @@
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="1"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Wisp" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-             <option name="attack" value="1"/>
+            <option name="attack" value="1"/>
             <option name="defense" value="1"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="1"/>
@@ -9768,7 +9774,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Mega-Cannon"/>             <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllSeaUnits$"/>
+                <option name="targetsAA" value="$AllSeaUnits$:$AllAirUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -9788,8 +9794,8 @@
             <option name="isAirTransportable" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Fire-Thrower" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="8"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="8"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="10"/>
             <option name="createsUnitsList" value="1:Fire-Shot"/>
@@ -9802,10 +9808,11 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="5"/>
+            <option name="bombingMaxDieSides" value="2"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="8"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -9924,7 +9931,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Burning-Oil"/>             <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllSeaUnits$"/>
+                <option name="targetsAA" value="$AllAirUnits$:$AllSeaUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -10310,8 +10317,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -10375,8 +10381,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="10"/>
-            <option name="maxOperationalDamage" value="9"/>
+            <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="2"/>
@@ -10485,8 +10490,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -10562,8 +10566,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="10"/>
-            <option name="maxOperationalDamage" value="9"/>
+            <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="2"/>
@@ -10779,7 +10782,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Sheep"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$"/>
+                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -10792,7 +10795,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Pigs"/>                    <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$"/>
+                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -10805,7 +10808,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Cows"/>                    <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$"/>
+                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -11271,8 +11274,8 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Gryphon-Transport" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="attack" value="2"/>
-            <option name="defense" value="2"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="transportCapacity" value="2"/>
@@ -11288,7 +11291,8 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="4"/>
+            <option name="bombingMaxDieSides" value="2"/>
+            <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="1"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
@@ -11358,8 +11362,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11381,8 +11384,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11404,8 +11406,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11427,8 +11428,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11450,8 +11450,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11473,8 +11472,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11496,8 +11494,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11519,8 +11516,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11542,8 +11538,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -11568,8 +11563,7 @@
             <option name="isFactory" value="true"/>
             <option name="isInfrastructure" value="true"/>
             <option name="canBeDamaged" value="true"/>
-            <option name="maxDamage" value="5"/>
-            <option name="maxOperationalDamage" value="4"/>
+            <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
@@ -14644,881 +14638,881 @@
         <attachment name="canalAttachmentCliffspring - Big Foot Mountains" attachTo="Cliffspring" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Cliffspring and Big Foot Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentCliffspring - Big Foot Mountains" attachTo="Big Foot Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Cliffspring and Big Foot Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentStarfall Village - Winterspring" attachTo="Starfall Village" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Starfall Village and Winterspring"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentStarfall Village - Winterspring" attachTo="Winterspring" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Starfall Village and Winterspring"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentTainted Mountains - Jadenar Mountains" attachTo="Tainted Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Tainted Mountains and Jadenar Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentTainted Mountains - Jadenar Mountains" attachTo="Jadenar Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Tainted Mountains and Jadenar Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentForest Song - Valormok" attachTo="Forest Song" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forest Song and Valormok"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentForest Song - Valormok" attachTo="Valormok" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forest Song and Valormok"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentWarsong Lumber Camp - Orgrimmar" attachTo="Warsong Lumber Camp" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Warsong Lumber Camp and Orgrimmar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentWarsong Lumber Camp - Orgrimmar" attachTo="Orgrimmar" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Warsong Lumber Camp and Orgrimmar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDemon Fall - Orgrimmar" attachTo="Demon Fall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Demon Fall and Orgrimmar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDemon Fall - Orgrimmar" attachTo="Orgrimmar" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Demon Fall and Orgrimmar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDemon Fall - The Sludge Fen" attachTo="Demon Fall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Demon Fall and The Sludge Fen"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDemon Fall - The Sludge Fen" attachTo="The Sludge Fen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Demon Fall and The Sludge Fen"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Sludge Fen - Durotar" attachTo="The Sludge Fen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Sludge Fen and Durotar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Sludge Fen - Durotar" attachTo="Durotar" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Sludge Fen and Durotar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Sludge Fen - Thunder Ridge" attachTo="The Sludge Fen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Sludge Fen and Thunder Ridge"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Sludge Fen - Thunder Ridge" attachTo="Thunder Ridge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Sludge Fen and Thunder Ridge"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThunder Ridge - Thorn Hill" attachTo="Thunder Ridge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thunder Ridge and Thorn Hill"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThunder Ridge - Thorn Hill" attachTo="Thorn Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thunder Ridge and Thorn Hill"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThorn Hill - Valley of Trials" attachTo="Thorn Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thorn Hill and Valley of Trials"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThorn Hill - Valley of Trials" attachTo="Valley of Trials" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thorn Hill and Valley of Trials"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentValley of Trials - Ratchet" attachTo="Valley of Trials" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Valley of Trials and Ratchet"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentValley of Trials - Ratchet" attachTo="Ratchet" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Valley of Trials and Ratchet"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentRatchet - Senjin Village" attachTo="Ratchet" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Ratchet and Senjin Village"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentRatchet - Senjin Village" attachTo="Senjin Village" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Ratchet and Senjin Village"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentValley of Trials - Razor Hills" attachTo="Valley of Trials" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Valley of Trials and Razor Hills"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentValley of Trials - Razor Hills" attachTo="Razor Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Valley of Trials and Razor Hills"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentRaynewood Retreat - Splintertree" attachTo="Raynewood Retreat" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Raynewood Retreat and Splintertree"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentRaynewood Retreat - Splintertree" attachTo="Splintertree" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Raynewood Retreat and Splintertree"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentRaynewood Retreat - Warsong Lumber Camp" attachTo="Raynewood Retreat" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Raynewood Retreat and Warsong Lumber Camp"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentRaynewood Retreat - Warsong Lumber Camp" attachTo="Warsong Lumber Camp" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Raynewood Retreat and Warsong Lumber Camp"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentWindshear Crag - Talondeep Path" attachTo="Windshear Crag" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Windshear Crag and Talondeep Path"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentWindshear Crag - Talondeep Path" attachTo="Talondeep Path" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Windshear Crag and Talondeep Path"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentWindshear Crag - Bloodtooth Camp" attachTo="Windshear Crag" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Windshear Crag and Bloodtooth Camp"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentWindshear Crag - Bloodtooth Camp" attachTo="Bloodtooth Camp" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Windshear Crag and Bloodtooth Camp"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentStonetalon Peak - The Shrine of Aessina" attachTo="Stonetalon Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Stonetalon Peak and The Shrine of Aessina"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentStonetalon Peak - The Shrine of Aessina" attachTo="The Shrine of Aessina" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Stonetalon Peak and The Shrine of Aessina"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
 
         <attachment name="canalAttachmentDesolace - Thunder Bluff" attachTo="Desolace" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Desolace and Thunder Bluff"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDesolace - Thunder Bluff" attachTo="Thunder Bluff" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Desolace and Thunder Bluff"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentMannoroc Coven - Ruins of Ravenwind" attachTo="Mannoroc Coven" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Mannoroc Coven and Ruins of Ravenwind"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentMannoroc Coven - Ruins of Ravenwind" attachTo="Ruins of Ravenwind" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Mannoroc Coven and Ruins of Ravenwind"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentMannoroc Coven - Jademir Lake" attachTo="Mannoroc Coven" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Mannoroc Coven and Jademir Lake"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentMannoroc Coven - Jademir Lake" attachTo="Jademir Lake" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Mannoroc Coven and Jademir Lake"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentMagram Village - Gordunni Badlands" attachTo="Magram Village" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Magram Village and Gordunni Badlands"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentMagram Village - Gordunni Badlands" attachTo="Gordunni Badlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Magram Village and Gordunni Badlands"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentGordunni Badlands - Red Cloud Mesa" attachTo="Gordunni Badlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Gordunni Badlands and Red Cloud Mesa"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentGordunni Badlands - Red Cloud Mesa" attachTo="Red Cloud Mesa" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Gordunni Badlands and Red Cloud Mesa"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentBrambleblade Ravine - Blackthorn Piles" attachTo="Brambleblade Ravine" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Brambleblade Ravine and Blackthorn Piles"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentBrambleblade Ravine - Blackthorn Piles" attachTo="Blackthorn Piles" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Brambleblade Ravine and Blackthorn Piles"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentBrambleblade Ravine - Field of Giants" attachTo="Brambleblade Ravine" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Brambleblade Ravine and Field of Giants"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentBrambleblade Ravine - Field of Giants" attachTo="Field of Giants" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Brambleblade Ravine and Field of Giants"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentForgotten Coast - Gordunni Mountains" attachTo="Forgotten Coast" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forgotten Coast and Gordunni Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentForgotten Coast - Gordunni Mountains" attachTo="Gordunni Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forgotten Coast and Gordunni Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThousand Needles - Razorfen Kraul" attachTo="Thousand Needles" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thousand Needles and Razorfen Kraul"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThousand Needles - Razorfen Kraul" attachTo="Razorfen Kraul" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thousand Needles and Razorfen Kraul"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThousand Needles - Highperch Caves" attachTo="Thousand Needles" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thousand Needles and Highperch Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThousand Needles - Highperch Caves" attachTo="Highperch Caves" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thousand Needles and Highperch Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThousand Needles - Un Goro Northern Wall" attachTo="Thousand Needles" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thousand Needles and Un Goro Northern Wall"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThousand Needles - Un Goro Northern Wall" attachTo="Un Goro Northern Wall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Thousand Needles and Un Goro Northern Wall"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Great Lift - Un Goro Northern Wall" attachTo="The Great Lift" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Great Lift and Un Goro Northern Wall"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Great Lift - Un Goro Northern Wall" attachTo="Un Goro Northern Wall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Great Lift and Un Goro Northern Wall"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Great Lift - Zul Farrak Mountains" attachTo="The Great Lift" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Great Lift and Zul Farrak Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Great Lift - Zul Farrak Mountains" attachTo="Zul Farrak Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Great Lift and Zul Farrak Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Great Lift - Bloodfen Caves" attachTo="The Great Lift" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Great Lift and Bloodfen Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Great Lift - Bloodfen Caves" attachTo="Bloodfen Caves" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Great Lift and Bloodfen Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentFreewind Post - Bloodfen Caves" attachTo="Freewind Post" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Freewind Post and Bloodfen Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentFreewind Post - Bloodfen Caves" attachTo="Bloodfen Caves" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Freewind Post and Bloodfen Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentFreewind Post - Dragonspawn Caves" attachTo="Freewind Post" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Freewind Post and Dragonspawn Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentFreewind Post - Dragonspawn Caves" attachTo="Dragonspawn Caves" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Freewind Post and Dragonspawn Caves"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentFreewind Post - Zul Farrak Mountains" attachTo="Freewind Post" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Freewind Post and Zul Farrak Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentFreewind Post - Zul Farrak Mountains" attachTo="Zul Farrak Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Freewind Post and Zul Farrak Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Shimmeing Flats - Flinty Mountains" attachTo="The Shimmeing Flats" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Shimmeing Flats and Flinty Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Shimmeing Flats - Flinty Mountains" attachTo="Flinty Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Shimmeing Flats and Flinty Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Shimmeing Flats - Stonewall Mountains" attachTo="The Shimmeing Flats" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Shimmeing Flats and Stonewall Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Shimmeing Flats - Stonewall Mountains" attachTo="Stonewall Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Shimmeing Flats and Stonewall Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentFungal Rock - Zul Farrak" attachTo="Fungal Rock" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Fungal Rock and Zul Farrak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentFungal Rock - Zul Farrak" attachTo="Zul Farrak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Fungal Rock and Zul Farrak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentMarshlands - Sandsorrow Watch" attachTo="Marshlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Marshlands and Sandsorrow Watch"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentMarshlands - Sandsorrow Watch" attachTo="Sandsorrow Watch" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Marshlands and Sandsorrow Watch"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDeathknell - Silverpine Forest" attachTo="Deathknell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Deathknell and Silverpine Forest"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDeathknell - Silverpine Forest" attachTo="Silverpine Forest" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Deathknell and Silverpine Forest"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDeathknell - Skittering Dark" attachTo="Deathknell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Deathknell and Skittering Dark"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDeathknell - Skittering Dark" attachTo="Skittering Dark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Deathknell and Skittering Dark"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentUndercity - Strahnbrad" attachTo="Undercity" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Undercity and Strahnbrad"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentUndercity - Strahnbrad" attachTo="Strahnbrad" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Undercity and Strahnbrad"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Bulwark - Sorrow Hill" attachTo="The Bulwark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Bulwark and Sorrow Hill"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Bulwark - Sorrow Hill" attachTo="Sorrow Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Bulwark and Sorrow Hill"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDalaran - Ruins of Alterac" attachTo="Dalaran" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dalaran and Ruins of Alterac"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDalaran - Ruins of Alterac" attachTo="Ruins of Alterac" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dalaran and Ruins of Alterac"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentRedpine Dell - Hearthglen" attachTo="Redpine Dell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Redpine Dell and Hearthglen"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentRedpine Dell - Hearthglen" attachTo="Hearthglen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Redpine Dell and Hearthglen"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentRedpine Dell - Scarlet Monastery" attachTo="Redpine Dell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Redpine Dell and Scarlet Monastery"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentRedpine Dell - Scarlet Monastery" attachTo="Scarlet Monastery" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Redpine Dell and Scarlet Monastery"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentLordaeron Coast - Scarlet Monastery" attachTo="Lordaeron Coast" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Lordaeron Coast and Scarlet Monastery"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentLordaeron Coast - Scarlet Monastery" attachTo="Scarlet Monastery" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Lordaeron Coast and Scarlet Monastery"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentPlagueworld - Fungal Vale" attachTo="Plagueworld" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Plagueworld and Fungal Vale"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentPlagueworld - Fungal Vale" attachTo="Fungal Vale" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Plagueworld and Fungal Vale"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentWestern Plaquelands - Ghostlands" attachTo="Western Plaquelands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Western Plaquelands and Ghostlands"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentWestern Plaquelands - Ghostlands" attachTo="Ghostlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Western Plaquelands and Ghostlands"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSorrow Hill - Darrowmere Pass" attachTo="Sorrow Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Sorrow Hill and Darrowmere Pass"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSorrow Hill - Darrowmere Pass" attachTo="Darrowmere Pass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Sorrow Hill and Darrowmere Pass"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSorrow Hill - Aerie Peak" attachTo="Sorrow Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Sorrow Hill and Aerie Peak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSorrow Hill - Aerie Peak" attachTo="Aerie Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Sorrow Hill and Aerie Peak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentStrahnbrad - Aerie Peak" attachTo="Strahnbrad" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Strahnbrad and Aerie Peak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentStrahnbrad - Aerie Peak" attachTo="Aerie Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Strahnbrad and Aerie Peak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentTarren Mill - Aerie Peak" attachTo="Tarren Mill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Tarren Mill and Aerie Peak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentTarren Mill - Aerie Peak" attachTo="Aerie Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Tarren Mill and Aerie Peak"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSouthshore Village - Dun Garok" attachTo="Southshore Village" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Southshore Village and Dun Garok"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSouthshore Village - Dun Garok" attachTo="Dun Garok" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Southshore Village and Dun Garok"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentEastern Darrowmere Range - Skulk Rock" attachTo="Eastern Darrowmere Range" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Eastern Darrowmere Range and Skulk Rock"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentEastern Darrowmere Range - Skulk Rock" attachTo="Skulk Rock" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Eastern Darrowmere Range and Skulk Rock"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSeradane Outback - Jintha Alor" attachTo="Seradane Outback" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Seradane Outback and Jintha Alor"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSeradane Outback - Jintha Alor" attachTo="Jintha Alor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Seradane Outback and Jintha Alor"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSeradane Outback - Revantusk" attachTo="Seradane Outback" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Seradane Outback and Revantusk"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSeradane Outback - Revantusk" attachTo="Revantusk" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Seradane Outback and Revantusk"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDun Garok - Stormgarde Keep" attachTo="Dun Garok" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dun Garok and Stormgarde Keep"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDun Garok - Stormgarde Keep" attachTo="Stormgarde Keep" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dun Garok and Stormgarde Keep"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDurnholde Keep - Arathi Highlands" attachTo="Durnholde Keep" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Durnholde Keep and Arathi Highlands"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDurnholde Keep - Arathi Highlands" attachTo="Arathi Highlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Durnholde Keep and Arathi Highlands"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentHammerfall - Jintha Alor" attachTo="Hammerfall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Hammerfall and Jintha Alor"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentHammerfall - Jintha Alor" attachTo="Jintha Alor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Hammerfall and Jintha Alor"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentWhitebark Village - Dun Modr" attachTo="Whitebark Village" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Whitebark Village and Dun Modr"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentWhitebark Village - Dun Modr" attachTo="Dun Modr" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Whitebark Village and Dun Modr"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSouthern Arathi Mountains - Northeron Mountains" attachTo="Southern Arathi Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Southern Arathi Mountains and Northeron Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSouthern Arathi Mountains - Northeron Mountains" attachTo="Northeron Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Southern Arathi Mountains and Northeron Mountains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDun Algaz - Green Belt" attachTo="Dun Algaz" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dun Algaz and Green Belt"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDun Algaz - Green Belt" attachTo="Green Belt" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dun Algaz and Green Belt"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentValley of Kings - Kargath" attachTo="Valley of Kings" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Valley of Kings and Kargath"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentValley of Kings - Kargath" attachTo="Kargath" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Valley of Kings and Kargath"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDustbelch Grotto - Blackfield" attachTo="Dustbelch Grotto" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dustbelch Grotto and Blackfield"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDustbelch Grotto - Blackfield" attachTo="Blackfield" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dustbelch Grotto and Blackfield"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentMisty Reed Strand - Tower of Ilgalar" attachTo="Misty Reed Strand" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Misty Reed Strand and Tower of Ilgalar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentMisty Reed Strand - Tower of Ilgalar" attachTo="Tower of Ilgalar" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Misty Reed Strand and Tower of Ilgalar"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentLake Everstill - Mysty Valley" attachTo="Lake Everstill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Lake Everstill and Mysty Valley"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentLake Everstill - Mysty Valley" attachTo="Mysty Valley" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Lake Everstill and Mysty Valley"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentGoldshire - Darkshire" attachTo="Goldshire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Goldshire and Darkshire"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentGoldshire - Darkshire" attachTo="Darkshire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Goldshire and Darkshire"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentForests Edge - Darkshire" attachTo="Forests Edge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forests Edge and Darkshire"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentForests Edge - Darkshire" attachTo="Darkshire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forests Edge and Darkshire"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentForests Edge - Raven Hill" attachTo="Forests Edge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forests Edge and Raven Hill"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentForests Edge - Raven Hill" attachTo="Raven Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Forests Edge and Raven Hill"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentSentinel Hill - Duskwood" attachTo="Sentinel Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Sentinel Hill and Duskwood"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentSentinel Hill - Duskwood" attachTo="Duskwood" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Sentinel Hill and Duskwood"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentZul Kunda - Northern Stranglethorn" attachTo="Zul Kunda" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Zul Kunda and Northern Stranglethorn"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentZul Kunda - Northern Stranglethorn" attachTo="Northern Stranglethorn" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Zul Kunda and Northern Stranglethorn"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentGrom Gol Base Camp - Baliamah Ruins" attachTo="Grom Gol Base Camp" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Grom Gol Base Camp and Baliamah Ruins"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentGrom Gol Base Camp - Baliamah Ruins" attachTo="Baliamah Ruins" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Grom Gol Base Camp and Baliamah Ruins"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentRaven Hill - Twilight Grove" attachTo="Raven Hill" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Raven Hill and Twilight Grove"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentRaven Hill - Twilight Grove" attachTo="Twilight Grove" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Raven Hill and Twilight Grove"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentDarkshire - Twilight Grove" attachTo="Darkshire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Darkshire and Twilight Grove"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentDarkshire - Twilight Grove" attachTo="Twilight Grove" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Darkshire and Twilight Grove"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentTranquil Gardens Cemetary - Karazhan" attachTo="Tranquil Gardens Cemetary" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Tranquil Gardens Cemetary and Karazhan"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentTranquil Gardens Cemetary - Karazhan" attachTo="Karazhan" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Tranquil Gardens Cemetary and Karazhan"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentMysty Valley - Karazhan" attachTo="Mysty Valley" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Mysty Valley and Karazhan"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentMysty Valley - Karazhan" attachTo="Karazhan" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Mysty Valley and Karazhan"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentTemple of Atal Hakkar - Rockpool Plains" attachTo="Temple of Atal Hakkar" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Temple of Atal Hakkar and Rockpool Plains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentTemple of Atal Hakkar - Rockpool Plains" attachTo="Rockpool Plains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Temple of Atal Hakkar and Rockpool Plains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
     
         <attachment name="canalAttachmentThe Dark Portal - Rockpool Plains" attachTo="The Dark Portal" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Dark Portal and Rockpool Plains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
         <attachment name="canalAttachmentThe Dark Portal - Rockpool Plains" attachTo="Rockpool Plains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between The Dark Portal and Rockpool Plains"/>
           <option name="landTerritories" value="Hero Bar"/>
-          <option name="excludedUnits" value="$AllAirBridgeCrossingUnits$"/>
+          <option name="excludedUnits" value="$AllAirwayCrossingUnits$"/>
         </attachment>
 <!-- End Air Connection / Canals -->
 
@@ -44215,18 +44209,26 @@
             <unitPlacement unitType="Gart" territory="Thunderhorn Water Well" quantity="1" owner="Tauren"/>
             <unitPlacement unitType="Sevis" territory="Undercity" quantity="1" owner="Undead"/>
             <unitPlacement unitType="Sian-tsu" territory="Skulk Rock" quantity="1" owner="Trolls"/>
-            <unitPlacement unitType="Footmen" territory="Stormwind" quantity="5" owner="Humans"/>
-            <unitPlacement unitType="Footmen" territory="Ironforge" quantity="3" owner="Dwarves"/>
+            <unitPlacement unitType="Footmen" territory="Stormwind" quantity="3" owner="Humans"/>
+            <unitPlacement unitType="Cavalry" territory="Stormwind" quantity="1" owner="Humans"/>
+            <unitPlacement unitType="Footmen" territory="Ironforge" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Cavalry" territory="Ironforge" quantity="1" owner="Dwarves"/>
             <unitPlacement unitType="Footmen" territory="Ironforge Airfield" quantity="2" owner="Dwarves"/>
-            <unitPlacement unitType="Footmen" territory="Booty Bay" quantity="5" owner="Gnomes"/>
-            <unitPlacement unitType="Footmen" territory="Ban Ethil" quantity="5" owner="Night-Elves"/>
-            <unitPlacement unitType="Footmen" territory="Orgrimmar" quantity="2" owner="Orcs"/>
-            <unitPlacement unitType="Footmen" territory="The Forlorn Ridge" quantity="3" owner="Orcs"/>
-            <unitPlacement unitType="Footmen" territory="Thunder Bluff" quantity="4" owner="Tauren"/>
+            <unitPlacement unitType="Footmen" territory="Booty Bay" quantity="3" owner="Gnomes"/>
+            <unitPlacement unitType="Cavalry" territory="Booty Bay" quantity="1" owner="Gnomes"/>
+            <unitPlacement unitType="Footmen" territory="Ban Ethil" quantity="3" owner="Night-Elves"/>
+            <unitPlacement unitType="Cavalry" territory="Darnassus" quantity="1" owner="Night-Elves"/>
+            <unitPlacement unitType="Footmen" territory="Orgrimmar" quantity="1" owner="Orcs"/>
+            <unitPlacement unitType="Cavalry" territory="Orgrimmar" quantity="1" owner="Orcs"/>
+            <unitPlacement unitType="Footmen" territory="The Forlorn Ridge" quantity="2" owner="Orcs"/>
+            <unitPlacement unitType="Footmen" territory="Thunder Bluff" quantity="2" owner="Tauren"/>
+            <unitPlacement unitType="Cavalry" territory="Thunder Bluff" quantity="1" owner="Tauren"/>
             <unitPlacement unitType="Footmen" territory="Thunderhorn Water Well" quantity="1" owner="Tauren"/>
-            <unitPlacement unitType="Footmen" territory="Brill" quantity="4" owner="Undead"/>
+            <unitPlacement unitType="Footmen" territory="Brill" quantity="2" owner="Undead"/>
+            <unitPlacement unitType="Cavalry" territory="Brill" quantity="1" owner="Undead"/>
             <unitPlacement unitType="Footmen" territory="Undercity" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Footmen" territory="Skulk Rock" quantity="3" owner="Trolls"/>
+            <unitPlacement unitType="Footmen" territory="Skulk Rock" quantity="1" owner="Trolls"/>
+            <unitPlacement unitType="Cavalry" territory="Skulk Rock" quantity="1" owner="Trolls"/>
             <unitPlacement unitType="Footmen" territory="Jintha Alor" quantity="2" owner="Trolls"/>
             
             <unitPlacement unitType="Wand" territory="Marryk Ranged Weapon" quantity="1" owner="Gnomes"/>
@@ -44367,21 +44369,21 @@
             <unitPlacement unitType="Sail-Route" territory="Western Strand" quantity="1" owner="Nature"/>
             <unitPlacement unitType="Sail-Route" territory="Menethil Bay" quantity="1" owner="Nature"/>
 
-            <heldUnits unitType="Sheep" player="Nature" quantity="18"/>
-            <heldUnits unitType="Pig" player="Nature" quantity="14"/>
+            <heldUnits unitType="Sheep" player="Nature" quantity="14"/>
+            <heldUnits unitType="Pig" player="Nature" quantity="12"/>
             <heldUnits unitType="Cow" player="Nature" quantity="10"/>
-            <heldUnits unitType="Farm" player="Nature" quantity="10"/>
+            <heldUnits unitType="Farm" player="Nature" quantity="8"/>
             <heldUnits unitType="Lumber-Mill" player="Nature" quantity="15"/>
             <heldUnits unitType="Forest" player="Nature" quantity="25"/>
             <heldUnits unitType="Large-Forest" player="Nature" quantity="15"/>
             <heldUnits unitType="Gold-Smelter" player="Nature" quantity="10"/>
-            <heldUnits unitType="Gold-Mine" player="Nature" quantity="20"/>
+            <heldUnits unitType="Gold-Mine" player="Nature" quantity="15"/>
             <heldUnits unitType="Automated-Gold-Mine" player="Nature" quantity="10"/>
             <heldUnits unitType="Small-Mana-Crystal" player="Nature" quantity="20"/>
             <heldUnits unitType="Mana-Crystal" player="Nature" quantity="15"/>
             <heldUnits unitType="Large-Mana-Crystal" player="Nature" quantity="10"/>
             <heldUnits unitType="Oil-Well" player="Nature" quantity="10"/>
-<!-- Units Sheep to Oil-Well must count total 202 units, so they may fit the number of territories to be picked during map startup -->
+<!-- Units Sheep to Oil-Well must count total 189 units, so they may fit the number of territories to be picked during map startup -->
             <heldUnits unitType="Ancient-Monolith" player="Nature" quantity="1"/>
             <heldUnits unitType="Shrine-of-Wisdom" player="Nature" quantity="1"/>
             <heldUnits unitType="Planetarium" player="Nature" quantity="1"/>
@@ -44391,7 +44393,7 @@
             <heldUnits unitType="Gold-Chest" player="Nature" quantity="1"/>
             <heldUnits unitType="Mana-Chest" player="Nature" quantity="1"/>
             <heldUnits unitType="XP-Chest" player="Nature" quantity="1"/>
-            <heldUnits unitType="Supply-Chest" player="Nature" quantity="1"/>
+            <heldUnits unitType="Supply-Chest" player="Nature" quantity="14"/>
             <heldUnits unitType="Hearthstone-Item" player="Nature" quantity="1"/>
             <heldUnits unitType="Lunar-Obelisk" player="Nature" quantity="1"/>
             <heldUnits unitType="Solar-Obelisk" player="Nature" quantity="1"/>
@@ -45182,24 +45184,24 @@
         <property name="Trolls bid" value="0" editable="false">
         </property>
 
-        <property name="Total Victory" value="true" editable="false">
+        <property name="Total Victory" value="true" editable="true">
             <boolean/>
         </property>
-        <property name="Alliance Total Victory VCs" value="7" editable="false">
-            <number min="1" max="7"/>
+        <property name="Alliance Total Victory VCs" value="6" editable="true">
+            <number min="1" max="8"/>
         </property>
-        <property name="Horde Total Victory VCs" value="7" editable="false">
-            <number min="1" max="7"/>
+        <property name="Horde Total Victory VCs" value="6" editable="true">
+            <number min="1" max="8"/>
         </property>
         
-        <property name="Economic Victory" value="false" editable="false">
+        <property name="Economic Victory" value="true" editable="true">
             <boolean/>
         </property>
-        <property name="Alliance Economic Victory" value="600" editable="false">
-            <number min="0" max="700"/>
+        <property name="Alliance Economic Victory" value="450" editable="true">
+            <number min="0" max="500"/>
         </property>
-        <property name="Horde Economic Victory" value="600" editable="false">
-            <number min="0" max="700"/>
+        <property name="Horde Economic Victory" value="450" editable="true">
+            <number min="0" max="500"/>
         </property>
 
         <property name="Use Triggers" value="true" editable="false">
@@ -45411,11 +45413,12 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_09.png"/>Hero Units can have multiple targeted attack rolls (Targeted Rolls), allowing them to fire several times, even at the same target, before normal combat begins.</span><br>
 <center><img src="NotesBar02.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Win Conditions</b></span><br>
-<span style="font-size:11px;color:C0C0C0">Either the Alliance or the Horde most own 7 of the 8 Capital Cities at the end of a Round to win the war.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_10.png"/>Total Victory is achieved by either the Alliance or the Horde owning 6 of the 8 Capital Cities at the end of a Round.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_11.png"/>Economic Victory is achieved by either the Alliance or the Horde producing 450 PUs at the end of a round.</span><br>
 <center><img src="NotesWin.png"/></center>
 <center><img src="NotesBar03.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Resources</b></span><br>
-<span style="font-size:11px;color:C0C0C0">No war is won without securing assets and raising capital. To build units, take control of as many resource producing elements as possible:</span><br><br>
+<span style="font-size:11px;color:C0C0C0">No war is won without securing assets and territories. To build units, take control of as many resource producing elements as possible:</span><br><br>
 <span style="font-size:11px;color:C0C0C0"><img src="PUs.png"/>&nbsp;<b>PUs</b> - Needed for production.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="Food.png"/>&nbsp;<b>Food</b> - Standard Land Units.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="Wood.png"/>&nbsp;<b>Wood</b> - Siege Engines and Ships.</span><br>
@@ -45427,42 +45430,43 @@
 <span style="font-size:13px;color:FFCC33"><b>Land Units</b></span><br><br>
 <center><img src="NotesLandUnit.png"/></center><br>
 <center><img src="unit_irregulars.png"/>&nbsp;<img src="unit_footmen.png"/>&nbsp;<img src="unit_pikemen.png"/>&nbsp;<img src="unit_bowmen.png"/>&nbsp;<img src="unit_crossbowmen.png"/>&nbsp;<img src="unit_cavalry.png"/></center><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_10.png"/>All players share the same basic Land Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_11.png"/>All players have access to Special Land Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_12.png"/>Many Land Units have purchasable Veteran and Elite variants.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_13.png"/>Veterans and Elites are affected by the same buffs and debuffs as standard units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_12.png"/>All players share the same basic Land Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_13.png"/>All players have access to Special Land Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_14.png"/>Many Land Units have purchasable Veteran and Elite variants.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_15.png"/>Veterans and Elites are affected by the same buffs and debuffs as standard units.</span><br>
 <center><img src="NotesBar05.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Sea Units</b></span><br><br>
 <center><img src="NotesSeaUnits.png"/></center><br>
 <center><img src="unit_warship.png"/>&nbsp;<img src="unit_submarine.png"/>&nbsp;<img src="unit_destroyer.png"/></center><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_14.png"/>All players share the same basic Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_15.png"/>All players have access to Special Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_16.png"/>Ports are required to place Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_17.png"/>Ports can only produce 1 Sea Unit every Turn (Except Stormwind Port).</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_18.png"/>Some Ports have a strong allegiance to a certain Race and will revert to their control if liberated by an ally of that Race.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_19.png"/>Resources are found all over the ocean and can be seized by Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_16.png"/>All players share the same basic Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_17.png"/>All players have access to Special Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_18.png"/>Ports are required to place Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_19.png"/>Ports can only produce 1 Sea Unit every Turn (Except Stormwind Port).</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_20.png"/>Some Ports have a strong allegiance to a certain Race and will revert to their control if liberated by an ally of that Race.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_21.png"/>Resources are found all over the ocean and can be seized by Sea Units.</span><br>
 <center><img src="NotesBar06.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Air Units</b></span><br><br>
 <center><img src="NotesAirUnits.png"/></center><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_20.png"/>Some players have access to Special Air Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_21.png"/>Air Units can fly over rivers and mountain ridges, wherever Airways exist.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_22.png"/>Air Units do not need to land in friendly territories at the end of Movement. They can stay in the air, even over water.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_22.png"/>Some players have access to Special Air Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_23.png"/>Air Units can fly over rivers and mountain ridges, wherever Airways exist.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_24.png"/>Air Units do not need to land in friendly territories at the end of Movement. They can stay in the air, even over water.</span><br>
 <center><img src="NotesBar07.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Factories</b></span><br><br>
 <center><img src="NotesFactories.png"/></center><br>
 <span style="font-size:11px;color:C0C0C0">Units may be produced at level 1-5 Factories. These are capturable and marked with golden dots, 1 dot per Factory level. Player built Factories can often be upgraded to higher levels. For each level a Factory is, it may:</span><br><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_16.png"/>Produce 1 Unit.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_17.png"/>Defend itself with 1 Wall-Archer (5/10) each Battle Round.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_18.png"/>Withstand 5 HP Bombardment damage before destroyed or disabled.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_19.png"/>Heal Heroes up to 1 HP + HPs equal to Factory level at the start of the Factory's turn.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_18.png"/>Withstand 1 HP Bombardment damage before destroyed or disabled.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_19.png"/>Heal Heroes up to 1 HP + HPs equal to Factory level at the start of the Factory's turn.</span><br><br>
 <span style="font-size:11px;color:C0C0C0"><b>Note:</b> There can be only 1 Factory in a territory, with the exception of Stormwind Port, an integrated part of Stormwind City. Stormwind may produce up to 5 Land and/or Sea Units total.</span><br>
 <center><img src="NotesBar08.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Bombardment</b></span><br><br>
 <center><img src="NotesBombardment.png"/></center><br>
-<span style="font-size:11px;color:C0C0C0">Player built Factories can be destroyed from a distance by Bombardment capable Units, Shots and Spells (none-player built Factories can only be disabled). This is a good way to avoid the heavy loses dealt by defending Wall-Archers. Capturing Factories undamaged is also an option. In this case the attacker will want to suppress the Wall-Archers by bringing along a Battering-Ram and Siege-Towers:</span><br><br>
+<span style="font-size:11px;color:C0C0C0">Player built Factories can be damaged from a distance by Bombardment capable Units, Shots and Spells (reducing production capability) and finally destroyed (when max Bombardment damaged is reached). This is a good way to avoid the heavy loses dealt by defending Wall-Archers. Capturing Factories undamaged is also an option. In this case the attacker will want to suppress the Wall-Archers by bringing a Battering-Ram and Siege-Towers:</span><br><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_13.png"/>1 Battering-Ram completely nullifies the first Wall-Archer of any Factory. A level 1 Factory is therefore best attacked with 1 Battering-Ram.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_14.png"/>1 Siege-Tower will suppress all remaining Wall-Archer attacks by 1 Targeted Power, from 5/10 to 4/10. Level 2+ Factories are therefore best attacked with 1 Battering-Ram and 1-5 Siege-Towers.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_15.png"/>1 Battering-Ram and 5 Siege-Towers completely nullify all 5 Wall-Archers of even a Capital City. One cannot bring more than 1 Battering-Ram and 5 Siege-Towers to a siege.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_15.png"/>1 Battering-Ram and 5 Siege-Towers completely nullify all 5 Wall-Archers of even a Capital City. One cannot bring more than 1 Battering-Ram and 5 Siege-Towers to a siege.</span><br><br>
+<span style="font-size:11px;color:C0C0C0"><b>Note:</b> All none-built Factories (Capitals, Stronghold, Manor, Keep, Tower and Ports) can only be damaged by Bombardment, not destroyed. Capitals will furthermore be set on fire (reaching max damaged) if lost to the enemy.</span><br>
 <center><img src="NotesBar09.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Heroes</b></span><br><br>
 <center><img src="NotesHeroes.png"/></center><br>
@@ -45471,8 +45475,8 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_02.png"/>Heroes often have several <i>Targeted Rolls</i>, allowing them to fire their Ranged Weapons several times before normal combat begins.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_03.png"/>Heroes defeated in battle can simply revive at a Factory.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_04.png"/>Heroes start as level 1, but may use XP to advance up to level 8. Each level grants a new unique Hero Ability.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_05.png"/>Hero Abilities may include access to various Spells, Pets, Buffs etc. All Heroes receive a 2 Movement Mount at level 5.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_06.png"/>Hero Origin Skills are chosen during Round 1. These give the Hero certain bonuses.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_05.png"/>Heroes gain access to various Spells, Pets and Buffs during play. All Heroes receive a 2 Movement Mount at level 5.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_06.png"/>Heroes choose special Origin Story Skills during Round 1. These give certain bonuses during play.</span><br>
 <center><img src="NotesOrigin.png"/></center>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_07.png"/>Hero Items will be picked up automatically and placed in the Hero's Backpack or Ranged Weapon slot.</span><br>
 <center><img src="NotesItems.png"/></center>
