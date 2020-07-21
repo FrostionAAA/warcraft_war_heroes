@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="Warcraft: War Heroes" version="0.1.3"/>
+  <info name="Warcraft: War Heroes" version="0.1.4"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="2.0"/>
   <diceSides value="10"/>
@@ -155,7 +155,7 @@
       <element name="Blue-Dragon"/>
       <element name="Bronze-Dragon"/>
     </variable>
-    
+
     <variable name="AllAllianceFootmen">
       <element name="Footmen"/>
       <element name="Veteran-Footmen"/>
@@ -4249,7 +4249,7 @@
             <result resourceOrUnit="Bowmen" quantity="1"/>
         </productionRule>
         <productionRule name="buyCrossbowmen">
-            <cost resource="PUs" quantity="15"/>
+            <cost resource="PUs" quantity="16"/>
             <cost resource="Food" quantity="10"/>
             <result resourceOrUnit="Crossbowmen" quantity="1"/>
         </productionRule>
@@ -4349,33 +4349,33 @@
             <result resourceOrUnit="Watch-Tower" quantity="1"/>
         </productionRule>
         <productionRule name="buyFort">
-            <cost resource="PUs" quantity="25"/>
-            <cost resource="Gold" quantity="25"/>
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Fort" quantity="1"/>
         </productionRule>
         <productionRule name="buyOutpost">
-            <cost resource="PUs" quantity="25"/>
-            <cost resource="Gold" quantity="25"/>
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Outpost" quantity="1"/>
         </productionRule>
         <productionRule name="buyGarrison">
-            <cost resource="PUs" quantity="20"/>
-            <cost resource="Gold" quantity="20"/>
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Garrison" quantity="1"/>
         </productionRule>
         <productionRule name="buyWar-Camp">
-            <cost resource="PUs" quantity="20"/>
-            <cost resource="Gold" quantity="20"/>
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="War-Camp" quantity="1"/>
         </productionRule>
         <productionRule name="buyCastle">
-            <cost resource="PUs" quantity="15"/>
-            <cost resource="Gold" quantity="15"/>
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Castle" quantity="1"/>
         </productionRule>
         <productionRule name="buyGreat-Hall">
-            <cost resource="PUs" quantity="15"/>
-            <cost resource="Gold" quantity="15"/>
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Gold" quantity="30"/>
             <result resourceOrUnit="Great-Hall" quantity="1"/>
         </productionRule>
         <productionRule name="buyAlliance-Capital">
@@ -4643,7 +4643,7 @@
             <result resourceOrUnit="Fire-Shot" quantity="1"/>
         </productionRule>
         <productionRule name="buySorcerer">
-            <cost resource="PUs" quantity="35"/>
+            <cost resource="PUs" quantity="30"/>
             <cost resource="Gold" quantity="60"/>
             <result resourceOrUnit="Sorcerer" quantity="1"/>
         </productionRule>
@@ -4664,7 +4664,7 @@
             <result resourceOrUnit="Berserkers" quantity="1"/>
         </productionRule>
         <productionRule name="buyDire-Troll">
-            <cost resource="PUs" quantity="70"/>
+            <cost resource="PUs" quantity="65"/>
             <cost resource="Gold" quantity="25"/>
             <result resourceOrUnit="Dire-Troll" quantity="1"/>
         </productionRule>
@@ -5041,7 +5041,7 @@
             <result resourceOrUnit="Bandit-Keep" quantity="1"/>
         </productionRule>
         <productionRule name="buyKeep">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="40"/>
             <result resourceOrUnit="Keep" quantity="1"/>
         </productionRule>
         <productionRule name="buyWorgen-Stalkers">
@@ -5077,7 +5077,7 @@
             <result resourceOrUnit="Defias-Stronghold" quantity="1"/>
         </productionRule>
         <productionRule name="buyStronghold">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="70"/>
             <result resourceOrUnit="Stronghold" quantity="1"/>
         </productionRule>
         <productionRule name="buyDraenei-Mutants">
@@ -5125,7 +5125,7 @@
             <result resourceOrUnit="Ghost-Tower" quantity="1"/>
         </productionRule>
         <productionRule name="buyTower">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="40"/>
             <result resourceOrUnit="Tower" quantity="1"/>
         </productionRule>
         <productionRule name="buyGnoll-Brutes">
@@ -5173,7 +5173,7 @@
             <result resourceOrUnit="Harpy-Manor" quantity="1"/>
         </productionRule>
         <productionRule name="buyManor">
-            <cost resource="PUs" quantity="5"/>
+            <cost resource="PUs" quantity="70"/>
             <result resourceOrUnit="Manor" quantity="1"/>
         </productionRule>
         <productionRule name="buyKobold-Miners">
@@ -7754,8 +7754,8 @@
         </attachment>
 
         <attachment name="unitAttachment" attachTo="Ballista" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
-            <option name="defense" value="7"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="6"/>
             <option name="transportCost" value="10"/>
             <option name="movement" value="1"/>
             <option name="createsUnitsList" value="1:Ballista-Shot"/>
@@ -7771,8 +7771,8 @@
             <option name="bombingMaxDieSides" value="3"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -7784,8 +7784,8 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Catapult" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="6"/>
-            <option name="defense" value="6"/>
+            <option name="attack" value="5"/>
+            <option name="defense" value="5"/>
             <option name="transportCost" value="10"/>
             <option name="movement" value="1"/>
             <option name="createsUnitsList" value="1:Catapult-Shot"/>
@@ -7801,8 +7801,8 @@
             <option name="bombingMaxDieSides" value="3"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -7814,8 +7814,8 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trebuchet" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="7"/>
-            <option name="defense" value="5"/>
+            <option name="attack" value="6"/>
+            <option name="defense" value="4"/>
             <option name="transportCost" value="10"/>
             <option name="movement" value="1"/>
             <option name="createsUnitsList" value="1:Trebuchet-Shot"/>
@@ -7831,8 +7831,8 @@
             <option name="bombingMaxDieSides" value="3"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="7"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -7856,8 +7856,8 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Bombard" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="attack" value="7"/>
-            <option name="defense" value="7"/>
+            <option name="attack" value="6"/>
+            <option name="defense" value="6"/>
             <option name="transportCost" value="10"/>
             <option name="movement" value="1"/>
             <option name="createsUnitsList" value="1:Bombard-Shot"/>
@@ -7901,8 +7901,8 @@
             <option name="bombingMaxDieSides" value="4"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="7"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -8347,7 +8347,7 @@
             <option name="unitPlacementOnlyAllowedIn" value="Arthur Origin Story:Khorman Origin Story:Marryk Origin Story:Ayanna Origin Story:Thrall Origin Story:Gart Origin Story:Sevis Origin Story:Sian-tsu Origin Story"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Origin-Instructor" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="createsResourcesList" value="7:Veterans"/>
+            <option name="createsResourcesList" value="10:Veterans"/>
             <option name="isInfrastructure" value="true"/>
             <option name="isConstruction" value="true"/>
             <option name="constructionType" value="Origin"/>
@@ -8394,7 +8394,7 @@
             <option name="unitPlacementOnlyAllowedIn" value="Arthur Origin Story:Khorman Origin Story:Marryk Origin Story:Ayanna Origin Story:Thrall Origin Story:Gart Origin Story:Sevis Origin Story:Sian-tsu Origin Story"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Origin-Officer" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="createsResourcesList" value="5:Elites"/>
+            <option name="createsResourcesList" value="7:Elites"/>
             <option name="isInfrastructure" value="true"/>
             <option name="isConstruction" value="true"/>
             <option name="constructionType" value="Origin"/>
@@ -8465,27 +8465,35 @@
 
         <attachment name="unitAttachment" attachTo="Humans-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Horse" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8507,27 +8515,35 @@
 
         <attachment name="unitAttachment" attachTo="Dwarves-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dwarves-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Ram" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8547,27 +8563,35 @@
 
         <attachment name="unitAttachment" attachTo="Gnomes-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnomes-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Mechanostrider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8618,27 +8642,35 @@
         
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Night-Elves-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Saber-Cat" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8658,27 +8690,35 @@
 
         <attachment name="unitAttachment" attachTo="Orcs-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Orcs-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Wolf" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8727,27 +8767,35 @@
         
         <attachment name="unitAttachment" attachTo="Tauren-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Tauren-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Shapeshift" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8788,27 +8836,35 @@
         
         <attachment name="unitAttachment" attachTo="Undead-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Undead-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Skeletal-Horse" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8837,7 +8893,6 @@
             <option name="defense" value="1"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
             <option name="requiresUnits" value="Sevis"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Horror-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -8866,27 +8921,35 @@
                 
         <attachment name="unitAttachment" attachTo="Trolls-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trolls-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Raptor" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8937,7 +9000,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Arthur"/>
                 <option name="offensiveAttackAA" value="0"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="0"/>                     <!-- Targeted Power -->
@@ -8964,7 +9026,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Khorman"/>
                 <option name="offensiveAttackAA" value="0"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="0"/>                     <!-- Targeted Power -->
@@ -8992,7 +9053,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Marryk"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9020,7 +9080,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Ayanna"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9047,7 +9106,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Thrall"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9074,7 +9132,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Gart"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9099,7 +9156,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="consumesUnits" value="1:Gart"/>
             <option name="isConstruction" value="true"/>
             <option name="constructionType" value="Shapeshift"/>
@@ -9113,11 +9169,10 @@
             <option name="isKamikaze" value="true"/>
             <option name="attack" value="6"/>
             <option name="defense" value="6"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="consumesUnits" value="1:Gart"/>
             <option name="isConstruction" value="true"/>
             <option name="constructionType" value="Shapeshift"/>
@@ -9136,7 +9191,6 @@
             <option name="hitPoints" value="4"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="consumesUnits" value="1:Gart"/>
             <option name="isConstruction" value="true"/>
             <option name="constructionType" value="Shapeshift"/>
@@ -9152,7 +9206,6 @@
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="createsUnitsList" value="1:Gart"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="consumesUnits" value="1:Cat-Form"/>
             <option name="consumesUnits" value="1:Owl-Form"/>
             <option name="consumesUnits" value="1:Bear-Form"/>
@@ -9170,7 +9223,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Sevis"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9197,7 +9249,6 @@
             <option name="hitPoints" value="3"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
-            <option name="createsResourcesList" value="10:XP"/>
             <option name="repairsUnits" value="1:Sian-tsu"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9262,7 +9313,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="5"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -9336,8 +9387,8 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Mortar" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="8"/>
-            <option name="defense" value="3"/>
+            <option name="attack" value="7"/>
+            <option name="defense" value="2"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="3"/>
             <option name="isAirTransportable" value="true"/>
@@ -9354,8 +9405,8 @@
             <option name="bombingMaxDieSides" value="2"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="8"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="7"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -9370,7 +9421,7 @@
             <option name="attack" value="4"/>
             <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="isKamikaze" value="true"/>
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
@@ -9388,7 +9439,7 @@
             <option name="attack" value="5"/>
             <option name="defense" value="5"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="hitPoints" value="2"/>
             <option name="repairsUnits" value="1:Gunship"/>
             <option name="isKamikaze" value="true"/>
@@ -9413,7 +9464,6 @@
             <option name="defense" value="2"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
                 <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
@@ -9439,7 +9489,7 @@
             <option name="attack" value="2"/>
             <option name="defense" value="2"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="isKamikaze" value="true"/>
                 <option name="offensiveAttackAA" value="2"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
@@ -9458,7 +9508,6 @@
             <option name="defense" value="2"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Spider-Tank" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="attack" value="5"/>
@@ -9520,7 +9569,7 @@
             <option name="attack" value="2"/>
             <option name="defense" value="2"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="isKamikaze" value="true"/>
             <option name="transportCapacity" value="2"/>
             <option name="isAirTransport" value="true"/>
@@ -9545,8 +9594,8 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Scorpid" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
-            <option name="defense" value="8"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="7"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="10"/>
             <option name="createsUnitsList" value="1:Scorpid-Shot"/>
@@ -9558,8 +9607,8 @@
             <option name="isSuicideOnAttack" value="true"/>
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
-                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -9612,7 +9661,7 @@
             <option name="attack" value="4"/>
             <option name="defense" value="2"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="isKamikaze" value="true"/>
                 <option name="offensiveAttackAA" value="1"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
@@ -9630,7 +9679,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="5"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -9783,7 +9832,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="2"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Banshee" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -9794,8 +9843,8 @@
             <option name="isAirTransportable" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Fire-Thrower" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="4"/>
-            <option name="defense" value="8"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="7"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="10"/>
             <option name="createsUnitsList" value="1:Fire-Shot"/>
@@ -9811,8 +9860,8 @@
             <option name="bombingMaxDieSides" value="2"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -9885,7 +9934,6 @@
             <option name="defense" value="2"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Dire-Troll" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="attack" value="5"/>
@@ -9923,8 +9971,8 @@
             <option name="requiresUnits" value="Stormwind-Port"/>
             <option name="requiresUnits" value="Theramore-Port"/>
             <option name="unitPlacementOnlyAllowedIn" value="Bloodsail Coast:Coast of Rut Theran:Darkshore:Mauraudon Coast:Menethil Bay:Steamwheedle Coast:Stormwind Harbor:The Merchant Coast:Theramore Coast:Waterfall Dive:Western Strand"/>
-                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -10319,6 +10367,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="1"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
             <option name="isConstruction" value="true"/>
@@ -10383,6 +10432,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="2"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="2"/>
             <option name="isConstruction" value="true"/>
@@ -10492,6 +10542,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="1"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="1"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="1"/>
             <option name="isConstruction" value="true"/>
@@ -10568,6 +10619,7 @@
             <option name="canBeDamaged" value="true"/>
             <option name="maxDamage" value="2"/>
             <option name="canDieFromReachingMaxDamage" value="false"/>
+            <option name="whenCapturedSustainsDamage" value="2"/>
             <option name="canProduceUnits" value="true"/>
             <option name="canProduceXUnits" value="2"/>
             <option name="isConstruction" value="true"/>
@@ -11084,7 +11136,7 @@
             <option name="attack" value="1"/>
             <option name="defense" value="1"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="3"/>
+            <option name="movement" value="2"/>
             <option name="transportCapacity" value="3"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -11138,8 +11190,6 @@
             <option name="attack" value="2"/>
             <option name="defense" value="6"/>
             <option name="movement" value="1"/>
-            <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
                 <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
@@ -11156,8 +11206,6 @@
             <option name="attack" value="6"/>
             <option name="defense" value="2"/>
             <option name="movement" value="1"/>
-            <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
                 <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
@@ -11174,8 +11222,6 @@
             <option name="attack" value="4"/>
             <option name="defense" value="4"/>
             <option name="movement" value="1"/>
-            <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
                 <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
@@ -11192,8 +11238,6 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="movement" value="1"/>
-            <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
                 <option name="offensiveAttackAA" value="7"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
@@ -11210,8 +11254,6 @@
             <option name="attack" value="7"/>
             <option name="defense" value="7"/>
             <option name="movement" value="1"/>
-            <option name="transportCost" value="5"/>
-            <option name="isAirTransportable" value="true"/>
             <option name="maxBuiltPerPlayer" value="1"/>
                 <option name="offensiveAttackAA" value="9"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="9"/>                     <!-- Targeted Power -->
@@ -11277,7 +11319,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="2"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -17190,7 +17232,7 @@
         </attachment>
 
         <attachment name="supportAttachmentHero-of-Humans-uses-Steel-Foot-Standard" attachTo="Arthur" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllAllianceFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -17588,7 +17630,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Dwarves-uses-Steel-Foot-Standard" attachTo="Khorman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllAllianceFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -17986,7 +18028,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Gnomes-uses-Steel-Foot-Standard" attachTo="Marryk" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllAllianceFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -18384,7 +18426,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Night-Elves-uses-Steel-Foot-Standard" attachTo="Ayanna" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllAllianceFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -18782,7 +18824,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Orcs-uses-Steel-Foot-Standard" attachTo="Thrall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllHordeFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -19180,7 +19222,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Tauren-uses-Steel-Foot-Standard" attachTo="Gart" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllHordeFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -19578,7 +19620,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Undead-uses-Steel-Foot-Standard" attachTo="Sevis" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllHordeFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -19976,7 +20018,7 @@
         </attachment>
         
         <attachment name="supportAttachmentHero-of-Trolls-uses-Steel-Foot-Standard" attachTo="Sian-tsu" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="unitType" value="Footmen"/>
+            <option name="unitType" value="$AllHordeFootmen$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
@@ -20575,8 +20617,6 @@
             <option name="productionRule" value="production_Humans:buyCaptain"/>
             <option name="productionRule" value="production_Humans:buyKnights"/>
             <option name="productionRule" value="production_Humans:buyAirship"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:HumansCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20626,8 +20666,6 @@
             <option name="productionRule" value="production_Dwarves:buySteam-Tank"/>
             <option name="productionRule" value="production_Dwarves:buyFlying-Machine"/>
             <option name="productionRule" value="production_Dwarves:buyGunship"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:DwarvesCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20677,8 +20715,6 @@
             <option name="productionRule" value="production_Gnomes:buySpider-Tank"/>
             <option name="productionRule" value="production_Gnomes:buyMecha-Pounder"/>
             <option name="productionRule" value="production_Gnomes:buyGyrocopter"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:GnomesCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20728,8 +20764,6 @@
             <option name="productionRule" value="production_Night-Elves:buyScorpid"/>
             <option name="productionRule" value="production_Night-Elves:buyMountain-Giant"/>
             <option name="productionRule" value="production_Night-Elves:buyHippogryph"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:Night-ElvesCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20779,8 +20813,6 @@
             <option name="productionRule" value="production_Orcs:buyShredder"/>
             <option name="productionRule" value="production_Orcs:buyWind-Hexer"/>
             <option name="productionRule" value="production_Orcs:buyZeppelin"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:OrcsCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20830,8 +20862,6 @@
             <option name="productionRule" value="production_Tauren:buyEarthshaker"/>
             <option name="productionRule" value="production_Tauren:buySpirit-Walker"/>
             <option name="productionRule" value="production_Tauren:buyKodo-Tower"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:TaurenCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20881,8 +20911,6 @@
             <option name="productionRule" value="production_Undead:buyFire-Thrower"/>
             <option name="productionRule" value="production_Undead:buyBanshee"/>
             <option name="productionRule" value="production_Undead:buyGargoyles"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:UndeadCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -20932,8 +20960,6 @@
             <option name="productionRule" value="production_Trolls:buyBerserkers"/>
             <option name="productionRule" value="production_Trolls:buyDire-Troll"/>
             <option name="productionRule" value="production_Trolls:buyWitch-Doctor"/>
-            <option name="resource" value="XP"/>
-            <option name="resourceCount" value="10"/>
             <option name="when" value="before:TrollsCombatMove"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -21836,10 +21862,10 @@
             <option name="conditions" value="conditionAttachment_Alliance-Stronghold_no_longer_has_Alliance-Footmen"/>
             <option name="unitType" value="Alliance-Stronghold"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Alliance-Footmen"/>
-            <option name="when" value="before:HumansEndTurn"/>
-            <option name="when" value="before:DwarvesEndTurn"/>
-            <option name="when" value="before:GnomesEndTurn"/>
-            <option name="when" value="before:Night-ElvesEndTurn"/>
+            <option name="when" value="after:HumansEndTurn"/>
+            <option name="when" value="after:DwarvesEndTurn"/>
+            <option name="when" value="after:GnomesEndTurn"/>
+            <option name="when" value="after:Night-ElvesEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_High-Elf-Village_now_has_High-Elves" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -21864,10 +21890,10 @@
             <option name="conditions" value="conditionAttachment_High-Elf-Village_no_longer_has_High-Elves"/>
             <option name="unitType" value="High-Elf-Village"/>
             <option name="unitProperty" value="createsUnitsList" count="1:High-Elves"/>
-            <option name="when" value="before:HumansEndTurn"/>
-            <option name="when" value="before:DwarvesEndTurn"/>
-            <option name="when" value="before:GnomesEndTurn"/>
-            <option name="when" value="before:Night-ElvesEndTurn"/>
+            <option name="when" value="after:HumansEndTurn"/>
+            <option name="when" value="after:DwarvesEndTurn"/>
+            <option name="when" value="after:GnomesEndTurn"/>
+            <option name="when" value="after:Night-ElvesEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_Dryad-Shrine_now_has_Dryads" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -21892,10 +21918,10 @@
             <option name="conditions" value="conditionAttachment_Dryad-Shrine_no_longer_has_Dryads"/>
             <option name="unitType" value="Dryad-Shrine"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Dryads"/>
-            <option name="when" value="before:HumansEndTurn"/>
-            <option name="when" value="before:DwarvesEndTurn"/>
-            <option name="when" value="before:GnomesEndTurn"/>
-            <option name="when" value="before:Night-ElvesEndTurn"/>
+            <option name="when" value="after:HumansEndTurn"/>
+            <option name="when" value="after:DwarvesEndTurn"/>
+            <option name="when" value="after:GnomesEndTurn"/>
+            <option name="when" value="after:Night-ElvesEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_Horde-Stronghold_now_has_Horde-Footmen" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -21920,10 +21946,10 @@
             <option name="conditions" value="conditionAttachment_Horde-Stronghold_no_longer_has_Horde-Footmen"/>
             <option name="unitType" value="Horde-Stronghold"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Horde-Footmen"/>
-            <option name="when" value="before:OrcsEndTurn"/>
-            <option name="when" value="before:TaurenEndTurn"/>
-            <option name="when" value="before:UndeadEndTurn"/>
-            <option name="when" value="before:TrollsEndTurn"/>
+            <option name="when" value="after:OrcsEndTurn"/>
+            <option name="when" value="after:TaurenEndTurn"/>
+            <option name="when" value="after:UndeadEndTurn"/>
+            <option name="when" value="after:TrollsEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_Blood-Elf-Village_now_has_Blood-Elves" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -21948,10 +21974,10 @@
             <option name="conditions" value="conditionAttachment_Blood-Elf-Village_no_longer_has_Blood-Elves"/>
             <option name="unitType" value="Blood-Elf-Village"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Blood-Elves"/>
-            <option name="when" value="before:OrcsEndTurn"/>
-            <option name="when" value="before:TaurenEndTurn"/>
-            <option name="when" value="before:UndeadEndTurn"/>
-            <option name="when" value="before:TrollsEndTurn"/>
+            <option name="when" value="after:OrcsEndTurn"/>
+            <option name="when" value="after:TaurenEndTurn"/>
+            <option name="when" value="after:UndeadEndTurn"/>
+            <option name="when" value="after:TrollsEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_Ogre-Mound_now_has_Ogres" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -21976,10 +22002,10 @@
             <option name="conditions" value="conditionAttachment_Ogre-Mound_no_longer_has_Ogres"/>
             <option name="unitType" value="Ogre-Mound"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Ogres"/>
-            <option name="when" value="before:OrcsEndTurn"/>
-            <option name="when" value="before:TaurenEndTurn"/>
-            <option name="when" value="before:UndeadEndTurn"/>
-            <option name="when" value="before:TrollsEndTurn"/>
+            <option name="when" value="after:OrcsEndTurn"/>
+            <option name="when" value="after:TaurenEndTurn"/>
+            <option name="when" value="after:UndeadEndTurn"/>
+            <option name="when" value="after:TrollsEndTurn"/>
         </attachment>
 <!-- End Capturable ally-spawning buildings change production of units -->
 
@@ -23301,7 +23327,7 @@
         <attachment name="triggerAttachment_Humans_can_now_revive_their_hero" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Humans_is_incapacitated"/>
             <option name="productionRule" value="production_Humans:buyArthur"/>
-            <option name="when" value="before:HumansPurchase"/>
+            <option name="when" value="after:HumansPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Humans_has_revived" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23321,7 +23347,7 @@
         <attachment name="triggerAttachment_Dwarves_can_now_revive_their_hero" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Dwarves_is_incapacitated"/>
             <option name="productionRule" value="production_Dwarves:buyKhorman"/>
-            <option name="when" value="before:DwarvesPurchase"/>
+            <option name="when" value="after:DwarvesPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Dwarves_has_revived" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23341,7 +23367,7 @@
         <attachment name="triggerAttachment_Gnomes_can_now_revive_their_hero" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Gnomes_is_incapacitated"/>
             <option name="productionRule" value="production_Gnomes:buyMarryk"/>
-            <option name="when" value="before:GnomesPurchase"/>
+            <option name="when" value="after:GnomesPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Gnomes_has_revived" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23366,7 +23392,7 @@
             <option name="conditions" value="conditionAttachment_The_Battle-Chicken_is_incapacitated:conditionAttachment_Marryk_is_level_3_or_more:conditionAttachment_The_hero_of_Gnomes_has_revived"/>
             <option name="unitType" value="Marryk"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Battle-Chicken"/>
-            <option name="when" value="before:GnomesEndTurn"/>
+            <option name="when" value="after:GnomesEndTurn"/>
         </attachment>
         <attachment name="conditionAttachment_The_Battle-Chicken_has_revived" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23376,7 +23402,7 @@
             <option name="conditions" value="conditionAttachment_The_Battle-Chicken_has_revived"/>
             <option name="unitType" value="Marryk"/>
             <option name="unitProperty" value="createsUnitsList" count="0:Battle-Chicken"/>
-            <option name="when" value="after:GnomesEndTurn"/>
+            <option name="when" value="before:GnomesEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_The_hero_of_Night-Elves_is_incapacitated" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -23387,7 +23413,7 @@
         <attachment name="triggerAttachment_Night-Elves_can_now_revive_their_hero" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Night-Elves_is_incapacitated"/>
             <option name="productionRule" value="production_Night-Elves:buyAyanna"/>
-            <option name="when" value="before:Night-ElvesPurchase"/>
+            <option name="when" value="after:Night-ElvesPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Night-Elves_has_revived" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23412,7 +23438,7 @@
             <option name="conditions" value="conditionAttachment_The_Mastiff_is_incapacitated:conditionAttachment_Ayanna_is_level_3_or_more:conditionAttachment_The_hero_of_Night-Elves_has_revived"/>
             <option name="unitType" value="Ayanna"/>
             <option name="unitProperty" value="createsUnitsList" count="1:Mastiff"/>
-            <option name="when" value="before:Night-ElvesEndTurn"/>
+            <option name="when" value="after:Night-ElvesEndTurn"/>
         </attachment>
         <attachment name="conditionAttachment_The_Mastiff_has_revived" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23422,7 +23448,7 @@
             <option name="conditions" value="conditionAttachment_The_Mastiff_has_revived"/>
             <option name="unitType" value="Ayanna"/>
             <option name="unitProperty" value="createsUnitsList" count="0:Mastiff"/>
-            <option name="when" value="after:Night-ElvesEndTurn"/>
+            <option name="when" value="before:Night-ElvesEndTurn"/>
         </attachment>
         
         <attachment name="conditionAttachment_The_hero_of_Orcs_is_incapacitated" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -23433,7 +23459,7 @@
         <attachment name="triggerAttachment_Orcs_can_now_revive_their_hero" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Orcs_is_incapacitated"/>
             <option name="productionRule" value="production_Orcs:buyThrall"/>
-            <option name="when" value="before:OrcsPurchase"/>
+            <option name="when" value="after:OrcsPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Orcs_has_revived" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23467,7 +23493,7 @@
         <attachment name="triggerAttachment_Tauren_can_now_revive_their_hero" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Tauren_is_incapacitated:conditionAttachment_The_hero_of_Tauren_is_not_present_in_another_form"/>
             <option name="productionRule" value="production_Tauren:buyGart"/>
-            <option name="when" value="before:TaurenPurchase"/>
+            <option name="when" value="after:TaurenPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_Gart_is_level_4_or_more" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23590,12 +23616,12 @@
         <attachment name="triggerAttachment_Undead_can_now_revive_their_hero_for_10_XP" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Undead_is_incapacitated:conditionAttachment_Sevis_is_level_6_or_below"/>
             <option name="productionRule" value="production_Undead:buySevis"/>
-            <option name="when" value="before:UndeadPurchase"/>
+            <option name="when" value="after:UndeadPurchase"/>
         </attachment>
         <attachment name="triggerAttachment_Undead_can_now_revive_their_hero_for_1_XP" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Undead_is_incapacitated:conditionAttachment_Sevis_is_level_7_or_above"/>
             <option name="productionRule" value="production_Undead:buySevis1XP"/>
-            <option name="when" value="before:UndeadPurchase"/>
+            <option name="when" value="after:UndeadPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Undead_has_revived" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -23616,7 +23642,7 @@
         <attachment name="triggerAttachment_Trolls_can_now_revive_their_hero" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_The_hero_of_Trolls_is_incapacitated"/>
             <option name="productionRule" value="production_Trolls:buySian-tsu"/>
-            <option name="when" value="before:TrollsPurchase"/>
+            <option name="when" value="after:TrollsPurchase"/>
         </attachment>
         <attachment name="conditionAttachment_The_hero_of_Trolls_has_revived" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
@@ -38470,7 +38496,7 @@
         </attachment>
         <attachment name="triggerAttachmentArthur_is_a_known_Guard" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenHumans-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:HumansPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenHumans-have-selected-Seafarer-origin" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -38586,7 +38612,7 @@
         </attachment>
         <attachment name="triggerAttachmentKhorman_is_a_known_Guard" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenDwarves-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:DwarvesPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenDwarves-have-selected-Seafarer-origin" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -38702,7 +38728,7 @@
         </attachment>
         <attachment name="triggerAttachmentMarryk_is_a_known_Guard" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenGnomes-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:GnomesPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenGnomes-have-selected-Seafarer-origin" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -38818,7 +38844,7 @@
         </attachment>
         <attachment name="triggerAttachmentAyanna_is_a_known_Guard" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenNight-Elves-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:Night-ElvesPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenNight-Elves-have-selected-Seafarer-origin" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -38934,7 +38960,7 @@
         </attachment>
         <attachment name="triggerAttachmentThrall_is_a_known_Guard" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenOrcs-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:OrcsPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenOrcs-have-selected-Seafarer-origin" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -39050,7 +39076,7 @@
         </attachment>
         <attachment name="triggerAttachmentGart_is_a_known_Guard" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenTauren-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:TaurenPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenTauren-have-selected-Seafarer-origin" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -39166,7 +39192,7 @@
         </attachment>
         <attachment name="triggerAttachmentSevis_is_a_known_Guard" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenUndead-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:UndeadPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenUndead-have-selected-Seafarer-origin" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -39282,7 +39308,7 @@
         </attachment>
         <attachment name="triggerAttachmentSian-tsu_is_a_known_Guard" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenTrolls-have-selected-Guard-origin"/>
-            <option name="purchase" value="Elite-Footmen" count="1"/>
+            <option name="purchase" value="Veteran-Footmen" count="1"/>
             <option name="when" value="before:TrollsPurchase"/>
         </attachment>
         <attachment name="conditionAttachmenTrolls-have-selected-Seafarer-origin" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -44218,15 +44244,15 @@
             <unitPlacement unitType="Cavalry" territory="Booty Bay" quantity="1" owner="Gnomes"/>
             <unitPlacement unitType="Footmen" territory="Ban Ethil" quantity="3" owner="Night-Elves"/>
             <unitPlacement unitType="Cavalry" territory="Darnassus" quantity="1" owner="Night-Elves"/>
-            <unitPlacement unitType="Footmen" territory="Orgrimmar" quantity="1" owner="Orcs"/>
+            <unitPlacement unitType="Footmen" territory="Orgrimmar" quantity="2" owner="Orcs"/>
             <unitPlacement unitType="Cavalry" territory="Orgrimmar" quantity="1" owner="Orcs"/>
             <unitPlacement unitType="Footmen" territory="The Forlorn Ridge" quantity="2" owner="Orcs"/>
-            <unitPlacement unitType="Footmen" territory="Thunder Bluff" quantity="2" owner="Tauren"/>
+            <unitPlacement unitType="Footmen" territory="Thunder Bluff" quantity="3" owner="Tauren"/>
             <unitPlacement unitType="Cavalry" territory="Thunder Bluff" quantity="1" owner="Tauren"/>
             <unitPlacement unitType="Footmen" territory="Thunderhorn Water Well" quantity="1" owner="Tauren"/>
             <unitPlacement unitType="Footmen" territory="Brill" quantity="2" owner="Undead"/>
             <unitPlacement unitType="Cavalry" territory="Brill" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Footmen" territory="Undercity" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Footmen" territory="Undercity" quantity="2" owner="Undead"/>
             <unitPlacement unitType="Footmen" territory="Skulk Rock" quantity="1" owner="Trolls"/>
             <unitPlacement unitType="Cavalry" territory="Skulk Rock" quantity="1" owner="Trolls"/>
             <unitPlacement unitType="Footmen" territory="Jintha Alor" quantity="2" owner="Trolls"/>
@@ -44383,7 +44409,7 @@
             <heldUnits unitType="Mana-Crystal" player="Nature" quantity="15"/>
             <heldUnits unitType="Large-Mana-Crystal" player="Nature" quantity="10"/>
             <heldUnits unitType="Oil-Well" player="Nature" quantity="10"/>
-<!-- Units Sheep to Oil-Well must count total 189 units, so they may fit the number of territories to be picked during map startup -->
+<!-- Units above must count total 189 units, so they may fit the number of territories to be picked during map startup -->
             <heldUnits unitType="Ancient-Monolith" player="Nature" quantity="1"/>
             <heldUnits unitType="Shrine-of-Wisdom" player="Nature" quantity="1"/>
             <heldUnits unitType="Planetarium" player="Nature" quantity="1"/>
@@ -45188,20 +45214,20 @@
             <boolean/>
         </property>
         <property name="Alliance Total Victory VCs" value="6" editable="true">
-            <number min="1" max="8"/>
+            <number min="5" max="8"/>
         </property>
         <property name="Horde Total Victory VCs" value="6" editable="true">
-            <number min="1" max="8"/>
+            <number min="5" max="8"/>
         </property>
         
         <property name="Economic Victory" value="true" editable="true">
             <boolean/>
         </property>
         <property name="Alliance Economic Victory" value="450" editable="true">
-            <number min="0" max="500"/>
+            <number min="400" max="600"/>
         </property>
         <property name="Horde Economic Victory" value="450" editable="true">
-            <number min="0" max="500"/>
+            <number min="400" max="600"/>
         </property>
 
         <property name="Use Triggers" value="true" editable="false">
@@ -45466,16 +45492,16 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_13.png"/>1 Battering-Ram completely nullifies the first Wall-Archer of any Factory. A level 1 Factory is therefore best attacked with 1 Battering-Ram.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_14.png"/>1 Siege-Tower will suppress all remaining Wall-Archer attacks by 1 Targeted Power, from 5/10 to 4/10. Level 2+ Factories are therefore best attacked with 1 Battering-Ram and 1-5 Siege-Towers.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_15.png"/>1 Battering-Ram and 5 Siege-Towers completely nullify all 5 Wall-Archers of even a Capital City. One cannot bring more than 1 Battering-Ram and 5 Siege-Towers to a siege.</span><br><br>
-<span style="font-size:11px;color:C0C0C0"><b>Note:</b> All none-built Factories (Capitals, Stronghold, Manor, Keep, Tower and Ports) can only be damaged by Bombardment, not destroyed. Capitals will furthermore be set on fire (reaching max damaged) if lost to the enemy.</span><br>
+<span style="font-size:11px;color:C0C0C0"><b>Note:</b> All none-built Factories (Capitals, Stronghold, Manor, Keep, Tower and Ports) can only be damaged by Bombardment, not destroyed. Capitals, Stronghold, Manor, Keep and Tower will furthermore be set on fire (reaching max damage) if lost to the enemy.</span><br>
 <center><img src="NotesBar09.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Heroes</b></span><br><br>
 <center><img src="NotesHeroes.png"/></center><br>
 <span style="font-size:11px;color:C0C0C0">These are the strongest of units. They have multiple HPs, skills and abilities:</span><br><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_01.png"/>Heroes can carry strong <i>Targeted Power</i> weapons.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_02.png"/>Heroes often have several <i>Targeted Rolls</i>, allowing them to fire their Ranged Weapons several times before normal combat begins.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_03.png"/>Heroes defeated in battle can simply revive at a Factory.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_03.png"/>Heroes and pets defeated in battle can simply revive at a Factory, although this can first happen at the end of the next Turn.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_04.png"/>Heroes start as level 1, but may use XP to advance up to level 8. Each level grants a new unique Hero Ability.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_05.png"/>Heroes gain access to various Spells, Pets and Buffs during play. All Heroes receive a 2 Movement Mount at level 5.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_05.png"/>Heroes gain access to various Spells, Pets and Buffs during play. All Heroes receive a 2 Movement Mount at level 5, except Tauren.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_06.png"/>Heroes choose special Origin Story Skills during Round 1. These give certain bonuses during play.</span><br>
 <center><img src="NotesOrigin.png"/></center>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_07.png"/>Hero Items will be picked up automatically and placed in the Hero's Backpack or Ranged Weapon slot.</span><br>
