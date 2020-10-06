@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="Warcraft: War Heroes" version="0.1.4"/>
+  <info name="Warcraft: War Heroes" version="0.1.5"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="2.0"/>
   <diceSides value="10"/>
@@ -75,8 +75,8 @@
       <element name="Veteran-Cavalry"/>
       <element name="Elite-Cavalry"/>
 
-      <element name="Ballista"/>
       <element name="Catapult"/>
+      <element name="Ballista"/>
       <element name="Trebuchet"/>
       <element name="Battering-Ram"/>
       <element name="Siege-Tower"/>
@@ -262,8 +262,8 @@
       <element name="Cavalry"/>
       <element name="Veteran-Cavalry"/>
       <element name="Elite-Cavalry"/>
-      <element name="Ballista-Shot"/>
       <element name="Catapult-Shot"/>
+      <element name="Ballista-Shot"/>
       <element name="Trebuchet-Shot"/>
       <element name="Ent"/>
       <element name="Ettin-Giant"/>
@@ -281,8 +281,8 @@
       <element name="Cavalry"/>
       <element name="Veteran-Cavalry"/>
       <element name="Elite-Cavalry"/>
-      <element name="Ballista-Shot"/>
       <element name="Catapult-Shot"/>
+      <element name="Ballista-Shot"/>
       <element name="Trebuchet-Shot"/>
       <element name="Bombard-Shot"/>
       <element name="Guard-Tower"/>
@@ -407,8 +407,8 @@
     </variable>
 
     <variable name="AllShots">
-      <element name="Ballista-Shot"/>
       <element name="Catapult-Shot"/>
+      <element name="Ballista-Shot"/>
       <element name="Trebuchet-Shot"/>
       <element name="Bombard-Shot"/>
       <element name="Mortar-Shot"/>
@@ -431,8 +431,8 @@
     </variable>
     
     <variable name="AllAirwayCrossingUnits">
-      <element name="Ballista-Shot"/>
       <element name="Catapult-Shot"/>
+      <element name="Ballista-Shot"/>
       <element name="Trebuchet-Shot"/>
       <element name="Bombard-Shot"/>
       <element name="Mortar-Shot"/>
@@ -3387,10 +3387,10 @@
         <unit name="Bowmen"/>
         <unit name="Crossbowmen"/>
         <unit name="Cavalry"/>
-        <unit name="Ballista"/>
-        <unit name="Ballista-Shot"/>
         <unit name="Catapult"/>
         <unit name="Catapult-Shot"/>
+        <unit name="Ballista"/>
+        <unit name="Ballista-Shot"/>
         <unit name="Trebuchet"/>
         <unit name="Trebuchet-Shot"/>
         <unit name="Battering-Ram"/>
@@ -4299,28 +4299,28 @@
             <cost resource="PUs" quantity="46"/>
             <result resourceOrUnit="Elite-Cavalry" quantity="1"/>
         </productionRule>
-        
-        <productionRule name="buyBallista">
-            <cost resource="PUs" quantity="32"/>
-            <cost resource="Wood" quantity="20"/>
-            <result resourceOrUnit="Ballista" quantity="1"/>
-        </productionRule>
-        <productionRule name="buyBallista-Shot">
-            <cost resource="PUs" quantity="1"/>
-            <result resourceOrUnit="Ballista-Shot" quantity="1"/>
-        </productionRule>
+
         <productionRule name="buyCatapult">
-            <cost resource="PUs" quantity="34"/>
-            <cost resource="Wood" quantity="22"/>
+            <cost resource="PUs" quantity="25"/>
+            <cost resource="Wood" quantity="15"/>
             <result resourceOrUnit="Catapult" quantity="1"/>
         </productionRule>
         <productionRule name="buyCatapult-Shot">
             <cost resource="PUs" quantity="1"/>
             <result resourceOrUnit="Catapult-Shot" quantity="1"/>
         </productionRule>
+        <productionRule name="buyBallista">
+            <cost resource="PUs" quantity="30"/>
+            <cost resource="Wood" quantity="25"/>
+            <result resourceOrUnit="Ballista" quantity="1"/>
+        </productionRule>
+        <productionRule name="buyBallista-Shot">
+            <cost resource="PUs" quantity="1"/>
+            <result resourceOrUnit="Ballista-Shot" quantity="1"/>
+        </productionRule>
         <productionRule name="buyTrebuchet">
-            <cost resource="PUs" quantity="36"/>
-            <cost resource="Wood" quantity="24"/>
+            <cost resource="PUs" quantity="35"/>
+            <cost resource="Wood" quantity="35"/>
             <result resourceOrUnit="Trebuchet" quantity="1"/>
         </productionRule>
         <productionRule name="buyTrebuchet-Shot">
@@ -4522,7 +4522,7 @@
             <result resourceOrUnit="Mecha-Pounder" quantity="1"/>
         </productionRule>
         <productionRule name="buyGyrocopter">
-            <cost resource="PUs" quantity="30"/>
+            <cost resource="PUs" quantity="25"/>
             <cost resource="Oil" quantity="25"/>
             <result resourceOrUnit="Gyrocopter" quantity="1"/>
         </productionRule>
@@ -6257,7 +6257,7 @@
             <result resourceOrUnit="War-Horn-Item" quantity="1"/>
         </productionRule>
         <productionRule name="buyLong-Range-Artillery-Item">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Long-Range-Artillery-Item" quantity="1"/>
         </productionRule>
         <productionRule name="buyWar-Paint-Item">
@@ -7753,9 +7753,39 @@
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
 
+        <attachment name="unitAttachment" attachTo="Catapult" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
+            <option name="transportCost" value="10"/>
+            <option name="movement" value="1"/>
+            <option name="createsUnitsList" value="1:Catapult-Shot"/>
+        </attachment>
+        <attachment name="unitAttachment" attachTo="Catapult-Shot" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+            <option name="movement" value="1"/>
+            <option name="isKamikaze" value="true"/>
+            <option name="isAir" value="true"/>
+            <option name="isSuicideOnAttack" value="true"/>
+            <option name="isSuicideOnDefense" value="true"/>
+            <option name="isFirstStrike" value="true"/>
+            <option name="isStrategicBomber" value="true"/>
+            <option name="bombingMaxDieSides" value="2"/>
+            <option name="bombingBonus" value="-1"/>
+            <option name="bombingTargets" value="$AllFactories$"/>
+                <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAAmaxDieSides" value="10"/>
+                <option name="attackAAmaxDieSides" value="10"/>
+                <option name="maxAAattacks" value="1"/>
+                <option name="maxRoundsAA" value="1"/>
+                <option name="isAAforCombatOnly" value="true"/>
+                <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
+                <option name="targetsAA" value="$AllLandUnits$"/>
+                <option name="damageableAA" value="true"/>
+                <option name="mayOverStackAA" value="true"/>
+        </attachment>
         <attachment name="unitAttachment" attachTo="Ballista" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="attack" value="4"/>
-            <option name="defense" value="6"/>
+            <option name="defense" value="4"/>
             <option name="transportCost" value="10"/>
             <option name="movement" value="1"/>
             <option name="createsUnitsList" value="1:Ballista-Shot"/>
@@ -7772,50 +7802,20 @@
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
+                <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
-                <option name="damageableAA" value="true"/>
-                <option name="mayOverStackAA" value="true"/>
-        </attachment>
-        <attachment name="unitAttachment" attachTo="Catapult" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
-            <option name="defense" value="5"/>
-            <option name="transportCost" value="10"/>
-            <option name="movement" value="1"/>
-            <option name="createsUnitsList" value="1:Catapult-Shot"/>
-        </attachment>
-        <attachment name="unitAttachment" attachTo="Catapult-Shot" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="movement" value="1"/>
-            <option name="isKamikaze" value="true"/>
-            <option name="isAir" value="true"/>
-            <option name="isSuicideOnAttack" value="true"/>
-            <option name="isSuicideOnDefense" value="true"/>
-            <option name="isFirstStrike" value="true"/>
-            <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="3"/>
-            <option name="bombingBonus" value="-1"/>
-            <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
-                <option name="offensiveAttackAAmaxDieSides" value="10"/>
-                <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
-                <option name="maxRoundsAA" value="1"/>
-                <option name="isAAforCombatOnly" value="true"/>
-                <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
+                <option name="targetsAA" value="$AllAirUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Trebuchet" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="6"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="5"/>
+            <option name="defense" value="5"/>
             <option name="transportCost" value="10"/>
             <option name="movement" value="1"/>
             <option name="createsUnitsList" value="1:Trebuchet-Shot"/>
@@ -7828,11 +7828,11 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="3"/>
+            <option name="bombingMaxDieSides" value="4"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
-                <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
                 <option name="maxAAattacks" value="1"/>
@@ -7898,7 +7898,7 @@
             <option name="isSuicideOnDefense" value="true"/>
             <option name="isFirstStrike" value="true"/>
             <option name="isStrategicBomber" value="true"/>
-            <option name="bombingMaxDieSides" value="4"/>
+            <option name="bombingMaxDieSides" value="5"/>
             <option name="bombingBonus" value="-1"/>
             <option name="bombingTargets" value="$AllFactories$"/>
                 <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
@@ -8465,31 +8465,31 @@
 
         <attachment name="unitAttachment" attachTo="Humans-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="10:XP"/>
+            <option name="createsResourcesList" value="100:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8894,6 +8894,12 @@
             <option name="movement" value="1"/>
             <option name="transportCost" value="5"/>
             <option name="requiresUnits" value="Sevis"/>
+            <option name="isConstruction" value="true"/>
+            <option name="constructionType" value="Skeletons"/>
+            <option name="maxConstructionsPerTypePerTerr" value="1"/>
+            <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
+            <option name="canOnlyBePlacedInTerritoryValuedAtX" value="1"/>
+            <option name="maxBuiltPerPlayer" value="3"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Horror-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="movement" value="1"/>
@@ -9703,6 +9709,7 @@
             <option name="canBombard" value="true"/>
             <option name="bombard" value="6"/>
             <option name="transportCapacity" value="10"/>
+            <option name="isFirstStrike" value="false"/>
             <option name="requiresUnits" value="Auberdine-Port"/>
             <option name="requiresUnits" value="Booty-Bay-Port"/>
             <option name="requiresUnits" value="Menethil-Port"/>
@@ -9803,6 +9810,7 @@
             <option name="canBombard" value="true"/>
             <option name="bombard" value="8"/>
             <option name="transportCapacity" value="4"/>
+            <option name="isFirstStrike" value="false"/>
             <option name="requiresUnits" value="Auberdine-Port"/>
             <option name="requiresUnits" value="Booty-Bay-Port"/>
             <option name="requiresUnits" value="Menethil-Port"/>
@@ -9970,6 +9978,7 @@
             <option name="requiresUnits" value="Steamwheedle-Port"/>
             <option name="requiresUnits" value="Stormwind-Port"/>
             <option name="requiresUnits" value="Theramore-Port"/>
+            <option name="isFirstStrike" value="false"/>
             <option name="unitPlacementOnlyAllowedIn" value="Bloodsail Coast:Coast of Rut Theran:Darkshore:Mauraudon Coast:Menethil Bay:Steamwheedle Coast:Stormwind Harbor:The Merchant Coast:Theramore Coast:Waterfall Dive:Western Strand"/>
                 <option name="offensiveAttackAA" value="6"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
@@ -12013,7 +12022,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Recruitment-Posters" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="5:Veterans"/>
+            <option name="createsResourcesList" value="10:Veterans"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Invisibility-Cloak" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -15974,7 +15983,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16093,7 +16102,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower:Mortar"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower:Mortar"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16212,7 +16221,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16331,7 +16340,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower:Scorpid"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower:Scorpid"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16451,7 +16460,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16570,7 +16579,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16689,7 +16698,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower:Fire-Thrower"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower:Fire-Thrower"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -16808,7 +16817,7 @@
             <option name="side" value="offence"/>
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
-            <option name="unitType" value="Ballista:Catapult:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
+            <option name="unitType" value="Catapult:Ballista:Trebuchet:Bombard:Battering-Ram:Siege-Tower"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Besieger"/>
@@ -20601,8 +20610,8 @@
             <option name="productionRule" value="production_Humans:buyBowmen"/>
             <option name="productionRule" value="production_Humans:buyCrossbowmen"/>
             <option name="productionRule" value="production_Humans:buyCavalry"/>
-            <option name="productionRule" value="production_Humans:buyBallista"/>
             <option name="productionRule" value="production_Humans:buyCatapult"/>
+            <option name="productionRule" value="production_Humans:buyBallista"/>
             <option name="productionRule" value="production_Humans:buyTrebuchet"/>
             <option name="productionRule" value="production_Humans:buyBattering-Ram"/>
             <option name="productionRule" value="production_Humans:buySiege-Tower"/>
@@ -20650,8 +20659,8 @@
             <option name="productionRule" value="production_Dwarves:buyBowmen"/>
             <option name="productionRule" value="production_Dwarves:buyCrossbowmen"/>
             <option name="productionRule" value="production_Dwarves:buyCavalry"/>
-            <option name="productionRule" value="production_Dwarves:buyBallista"/>
             <option name="productionRule" value="production_Dwarves:buyCatapult"/>
+            <option name="productionRule" value="production_Dwarves:buyBallista"/>
             <option name="productionRule" value="production_Dwarves:buyTrebuchet"/>
             <option name="productionRule" value="production_Dwarves:buyBattering-Ram"/>
             <option name="productionRule" value="production_Dwarves:buySiege-Tower"/>
@@ -20699,8 +20708,8 @@
             <option name="productionRule" value="production_Gnomes:buyBowmen"/>
             <option name="productionRule" value="production_Gnomes:buyCrossbowmen"/>
             <option name="productionRule" value="production_Gnomes:buyCavalry"/>
-            <option name="productionRule" value="production_Gnomes:buyBallista"/>
             <option name="productionRule" value="production_Gnomes:buyCatapult"/>
+            <option name="productionRule" value="production_Gnomes:buyBallista"/>
             <option name="productionRule" value="production_Gnomes:buyTrebuchet"/>
             <option name="productionRule" value="production_Gnomes:buyBattering-Ram"/>
             <option name="productionRule" value="production_Gnomes:buySiege-Tower"/>
@@ -20748,8 +20757,8 @@
             <option name="productionRule" value="production_Night-Elves:buyBowmen"/>
             <option name="productionRule" value="production_Night-Elves:buyCrossbowmen"/>
             <option name="productionRule" value="production_Night-Elves:buyCavalry"/>
-            <option name="productionRule" value="production_Night-Elves:buyBallista"/>
             <option name="productionRule" value="production_Night-Elves:buyCatapult"/>
+            <option name="productionRule" value="production_Night-Elves:buyBallista"/>
             <option name="productionRule" value="production_Night-Elves:buyTrebuchet"/>
             <option name="productionRule" value="production_Night-Elves:buyBattering-Ram"/>
             <option name="productionRule" value="production_Night-Elves:buySiege-Tower"/>
@@ -20797,8 +20806,8 @@
             <option name="productionRule" value="production_Orcs:buyBowmen"/>
             <option name="productionRule" value="production_Orcs:buyCrossbowmen"/>
             <option name="productionRule" value="production_Orcs:buyCavalry"/>
-            <option name="productionRule" value="production_Orcs:buyBallista"/>
             <option name="productionRule" value="production_Orcs:buyCatapult"/>
+            <option name="productionRule" value="production_Orcs:buyBallista"/>
             <option name="productionRule" value="production_Orcs:buyTrebuchet"/>
             <option name="productionRule" value="production_Orcs:buyBattering-Ram"/>
             <option name="productionRule" value="production_Orcs:buySiege-Tower"/>
@@ -20846,8 +20855,8 @@
             <option name="productionRule" value="production_Tauren:buyBowmen"/>
             <option name="productionRule" value="production_Tauren:buyCrossbowmen"/>
             <option name="productionRule" value="production_Tauren:buyCavalry"/>
-            <option name="productionRule" value="production_Tauren:buyBallista"/>
             <option name="productionRule" value="production_Tauren:buyCatapult"/>
+            <option name="productionRule" value="production_Tauren:buyBallista"/>
             <option name="productionRule" value="production_Tauren:buyTrebuchet"/>
             <option name="productionRule" value="production_Tauren:buyBattering-Ram"/>
             <option name="productionRule" value="production_Tauren:buySiege-Tower"/>
@@ -20895,8 +20904,8 @@
             <option name="productionRule" value="production_Undead:buyBowmen"/>
             <option name="productionRule" value="production_Undead:buyCrossbowmen"/>
             <option name="productionRule" value="production_Undead:buyCavalry"/>
-            <option name="productionRule" value="production_Undead:buyBallista"/>
             <option name="productionRule" value="production_Undead:buyCatapult"/>
+            <option name="productionRule" value="production_Undead:buyBallista"/>
             <option name="productionRule" value="production_Undead:buyTrebuchet"/>
             <option name="productionRule" value="production_Undead:buyBattering-Ram"/>
             <option name="productionRule" value="production_Undead:buySiege-Tower"/>
@@ -20944,8 +20953,8 @@
             <option name="productionRule" value="production_Trolls:buyBowmen"/>
             <option name="productionRule" value="production_Trolls:buyCrossbowmen"/>
             <option name="productionRule" value="production_Trolls:buyCavalry"/>
-            <option name="productionRule" value="production_Trolls:buyBallista"/>
             <option name="productionRule" value="production_Trolls:buyCatapult"/>
+            <option name="productionRule" value="production_Trolls:buyBallista"/>
             <option name="productionRule" value="production_Trolls:buyTrebuchet"/>
             <option name="productionRule" value="production_Trolls:buyBattering-Ram"/>
             <option name="productionRule" value="production_Trolls:buySiege-Tower"/>
@@ -33865,8 +33874,8 @@
         <attachment name="triggerAttachmentHero_of_Humans_has_the_Long-Range-Artillery" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenHumans-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Arthur"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -34492,8 +34501,8 @@
         <attachment name="triggerAttachmentHero_of_Dwarves_has_the_Long-Range-Artillery" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenDwarves-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Khorman"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -34781,7 +34790,7 @@
             <option name="when" value="after:GnomesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        
+
         <attachment name="conditionAttachmenGnomes-have-Spyglass-in-backpack" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Marryk Backpack" count="1"/>
             <option name="unitPresence" value="Spyglass" count="1"/>
@@ -35119,8 +35128,8 @@
         <attachment name="triggerAttachmentHero_of_Gnomes_has_the_Long-Range-Artillery" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenGnomes-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Marryk"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -35746,8 +35755,8 @@
         <attachment name="triggerAttachmentHero_of_Night-Elves_has_the_Long-Range-Artillery" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenNight-Elves-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Ayanna"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -36377,8 +36386,8 @@
         <attachment name="triggerAttachmentHero_of_Orcs_has_the_Long-Range-Artillery" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenOrcs-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Thrall"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -37008,8 +37017,8 @@
         <attachment name="triggerAttachmentHero_of_Tauren_has_the_Long-Range-Artillery" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenTauren-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Gart"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -37639,8 +37648,8 @@
         <attachment name="triggerAttachmentHero_of_Undead_has_the_Long-Range-Artillery" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenUndead-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Sevis"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -38270,8 +38279,8 @@
         <attachment name="triggerAttachmentHero_of_Trolls_has_the_Long-Range-Artillery" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmenTrolls-have-Long-Range-Artillery-in-backpack"/>
             <option name="unitType" value="Sian-tsu"/>
-            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Catapult-Shot"/>
+            <option name="unitProperty" value="givesMovement" count="1:Ballista-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Trebuchet-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Bombard-Shot"/>
             <option name="unitProperty" value="givesMovement" count="1:Fire-Shot"/>
@@ -44582,14 +44591,22 @@
         </unitInitialize>
         
         <resourceInitialize>
-            <resourceGiven player="Humans" resource="XP" quantity="0"/>
-            <resourceGiven player="Dwarves" resource="XP" quantity="0"/>
-            <resourceGiven player="Gnomes" resource="XP" quantity="0"/>
-            <resourceGiven player="Night-Elves" resource="XP" quantity="0"/>
-            <resourceGiven player="Orcs" resource="XP" quantity="0"/>
-            <resourceGiven player="Tauren" resource="XP" quantity="0"/>
-            <resourceGiven player="Undead" resource="XP" quantity="0"/>
-            <resourceGiven player="Trolls" resource="XP" quantity="0"/>
+            <resourceGiven player="Humans" resource="PUs" quantity="0"/>
+            <resourceGiven player="Dwarves" resource="PUs" quantity="0"/>
+            <resourceGiven player="Gnomes" resource="PUs" quantity="0"/>
+            <resourceGiven player="Night-Elves" resource="PUs" quantity="0"/>
+            <resourceGiven player="Orcs" resource="PUs" quantity="0"/>
+            <resourceGiven player="Tauren" resource="PUs" quantity="0"/>
+            <resourceGiven player="Undead" resource="PUs" quantity="0"/>
+            <resourceGiven player="Trolls" resource="PUs" quantity="0"/>
+            <!-- <resourceGiven player="Humans" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Dwarves" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Gnomes" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Night-Elves" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Orcs" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Tauren" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Undead" resource="Wood" quantity="1000"/>
+            <resourceGiven player="Trolls" resource="Wood" quantity="1000"/> -->
         </resourceInitialize>
 <!-- Test full level up to level 8, then give 1390 XP to the player from start -->
 
@@ -45460,22 +45477,25 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_13.png"/>All players have access to Special Land Units.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_14.png"/>Many Land Units have purchasable Veteran and Elite variants.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_15.png"/>Veterans and Elites are affected by the same buffs and debuffs as standard units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_16.png"/>Catapults have Shots that targets specifically Factories and only Land Units.</span><br>
 <center><img src="NotesBar05.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Sea Units</b></span><br><br>
 <center><img src="NotesSeaUnits.png"/></center><br>
 <center><img src="unit_warship.png"/>&nbsp;<img src="unit_submarine.png"/>&nbsp;<img src="unit_destroyer.png"/></center><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_16.png"/>All players share the same basic Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_17.png"/>All players have access to Special Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_18.png"/>Ports are required to place Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_19.png"/>Ports can only produce 1 Sea Unit every Turn (Except Stormwind Port).</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_20.png"/>Some Ports have a strong allegiance to a certain Race and will revert to their control if liberated by an ally of that Race.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_21.png"/>Resources are found all over the ocean and can be seized by Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_17.png"/>All players share the same basic Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_18.png"/>All players have access to Special Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_19.png"/>Ports are required to place Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_20.png"/>Ports can only produce 1 Sea Unit every Turn (Except Stormwind Port).</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_21.png"/>Some Ports have a strong allegiance to a certain Race and will revert to their control if liberated by an ally of that Race.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_22.png"/>Resources are found all over the ocean and can be seized by Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_23.png"/>Trebuchets have Shots that targets specifically Factories and only Sea Units.</span><br>
 <center><img src="NotesBar06.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Air Units</b></span><br><br>
 <center><img src="NotesAirUnits.png"/></center><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_22.png"/>Some players have access to Special Air Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_23.png"/>Air Units can fly over rivers and mountain ridges, wherever Airways exist.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_24.png"/>Air Units do not need to land in friendly territories at the end of Movement. They can stay in the air, even over water.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_24.png"/>Some players have access to Special Air Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_25.png"/>Air Units can fly over rivers and mountain ridges, wherever Airways exist.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_26.png"/>Air Units do not need to land in friendly territories at the end of Movement. They can stay in the air, even over water.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_27.png"/>Ballistas have Shots that targets specifically Factories and only Air Units.</span><br>
 <center><img src="NotesBar07.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Factories</b></span><br><br>
 <center><img src="NotesFactories.png"/></center><br>
@@ -45483,7 +45503,7 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_16.png"/>Produce 1 Unit.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_17.png"/>Defend itself with 1 Wall-Archer (5/10) each Battle Round.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_18.png"/>Withstand 1 HP Bombardment damage before destroyed or disabled.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_19.png"/>Heal Heroes up to 1 HP + HPs equal to Factory level at the start of the Factory's turn.</span><br><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_19.png"/>Heal Hero HPs equal to Factory level at the start of the Factory's turn. (This is in addition to Heros' normal 1 HP healing per Turn)</span><br><br>
 <span style="font-size:11px;color:C0C0C0"><b>Note:</b> There can be only 1 Factory in a territory, with the exception of Stormwind Port, an integrated part of Stormwind City. Stormwind may produce up to 5 Land and/or Sea Units total.</span><br>
 <center><img src="NotesBar08.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Bombardment</b></span><br><br>
@@ -45509,6 +45529,8 @@
 <center><img src="NotesBar10.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Ranged Weapons</b></span><br>
 <span style="font-size:11px;color:C0C0C0">Before normal combat, ranged units all fire once, having a chance to hit and kill random enemy units. This includes, but is not limited to, artillery shots raining down, wall archers shooting arrows, tanks discharging guns, magicians channeling magic, cavalry crushing into the enemy, ents stumping on small foes etc.</span><br><br>
+<span style="font-size:11px;color:C0C0C0"><b>Note:</b> Catapult-Shots, Ballista-Shots and Trebuchet-Shots are specialized for targeting only Land Units, Air Units and Sea Units respectively, as well as Factories.</span><br>
+<center><img src="NotesArtillery.png"/></center><br>
 <span style="font-size:11px;color:C0C0C0"><b>Targeted Power</b>: How strong is the Ranged Weapon attack from 1-10. (10%-100% kill chance)</span><br>
 <span style="font-size:11px;color:C0C0C0"><b>Targeted Rolls</b>: How many ranged attack rolls does the unit have before normal combat. (Only Hero Units and Factories have several rolls)</span><br>
 <span style="font-size:11px;color:C0C0C0"><b>Targeted Type</b>: (Relevant when Heros give buffs or debuffs to other ranged units)</span><br>
@@ -45518,28 +45540,62 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_11.png"/><i>Crush</i> (Cavalry, Artillery, Ents etc.)</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textdotsmall_12.png"/><i>Wall-Archers</i> (Factories only. Note that these fire every Combat Round!)</span><br>
 <center><img src="NotesBar11.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 1 - Humans</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Arthur the Paladin is a defensive character, in touch with the divine. His skills are aimed towards weakening enemies, protecting himself and protecting allies. He is wise to keep a small contingent of soldiers with him, as his aura strengthens allies. His Judgment-Spell stands out as his single strong offensive asset.</span><br><br>
+<span style="font-size:11px;color:C0C0C0">Humans have the benefit of owning the largest coastal city on the map, capable of building lots of ships.  On land, Humans should think about supporting the Dwarves to the north, in their struggle to keep the borders safe. Also Humans should note that there are several Waygates to the South and East.</span><br><br>
+<span style="font-size:11px;color:C0C0C0">Special Units unique to Humans are: Heavy-Troopships (Transport Capacity: 100), Priests (Hero heal, unit defense and Magic attack), Captains (Footmen support), Knights (Cavalry support and Crush attack) and Airships (Infantry air transport and Gun attack).</span><br><br>
+<center><img src="RoundelHumans.png"/></center>
+<center><img src="NotesBar12.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 2 - Dwarves</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla</span><br>
+<center><img src="RoundelDwarves.png"/></center>
+<center><img src="NotesBar13.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 3 - Gnomes</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla. special units like the Spider-Tank, a special unit that (unlike other Land Units) is able to traverse mountains and rivers.</span><br>
+<center><img src="RoundelGnomes.png"/></center>
+<center><img src="NotesBar14.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 4 - Night-Elves</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla</span><br>
+<center><img src="RoundelNight-Elves.png"/></center>
+<center><img src="NotesBar15.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 5 - Orcs</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla</span><br>
+<center><img src="RoundelOrcs.png"/></center>
+<center><img src="NotesBar16.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 6 - Tauren</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla</span><br>
+<center><img src="RoundelTauren.png"/></center>
+<center><img src="NotesBar17.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 7 - Undead</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla</span><br>
+<center><img src="RoundelUndead.png"/></center>
+<center><img src="NotesBar18.png"/></center>
+<span style="font-size:13px;color:FFCC33"><b>Player 8 - Trolls</b></span><br>
+<span style="font-size:11px;color:C0C0C0">Bla.Bla.Bla</span><br>
+<center><img src="RoundelTrolls.png"/></center>
+<center><img src="NotesBar19.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Creeps and Pirates</b></span><br>
 <span style="font-size:11px;color:C0C0C0">The primitive races of Azeroth, collectively known as Creeps, are randomly scattered across the world. Creeps will fight any one passing through their territory, but they do not move around. Eliminating Creeps will often grant XP, Gold and sometime special structures.</span><br>
 <center><img src="NotesCreeps.png"/></center>
 <span style="font-size:11px;color:C0C0C0">Pirates are unlike the other more passive Creeps. Pirates spawn new units at the end of Rounds 1-3, and they will continuously roam the seas and raid the inlands until dealt with.</span><br>
 <center><img src="NotesPirates.png"/></center>
-<center><img src="NotesBar12.png"/></center>
+<center><img src="NotesBar20.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Bridges and Airways</b></span><br>
 <span style="font-size:11px;color:C0C0C0">All Units may cross Bridges, but only Air Units, Artillery Shots and Spells may traverse the Airways.</span><br>
 <center><img src="NotesAirwaysBridges.png"/></center>
-<center><img src="NotesBar13.png"/></center>
+<center><img src="NotesBar21.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Lakes and Shallow Water</b></span><br>
 <span style="font-size:11px;color:C0C0C0">Air Units can cross Lakes and Shallow Waters, but Sea Units may not enter these territories.</span><br>
 <center><img src="NotesLakes.png"/></center>
-<center><img src="NotesBar14.png"/></center>
+<center><img src="NotesBar22.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Waygates</b></span><br>
 <span style="font-size:11px;color:C0C0C0">These fabulous buildings can teleport units from one continent to another, linking several territories of The Eastern Kingdoms and Kalimdor.</span><br>
 <center><img src="NotesWaygates.png"/></center>
-<center><img src="NotesBar15.png"/></center>
+<center><img src="NotesBar23.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Credits</b></span><br>
 <span style="font-size:11px;color:C0C0C0">Map by Frostion.</span><br>
 <span style="font-size:11px;color:C0C0C0">Thanks to TripleA community members Redrum and Cernel for helping out during the map making process.</span><br>
-<center><img src="NotesBar16.png"/></center>
+<center><img src="NotesBar24.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Copyright Disclaimer</b></span><br>
 <span style="font-size:11px;color:C0C0C0">This map is inspired by and uses art from the games Warcraft: Orcs & Humans, Warcraft II: Tides of Darkness, Warcraft III: Reign of Chaos, and World of Warcraft. All Warcraft franchise images, sounds, music, and lore are the sole property of Blizzard Entertainment. Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc., in the U.S. and/or other countries. Please visit: https://www.blizzard.com/</span><br>
 </div>
