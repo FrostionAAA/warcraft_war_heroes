@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="Warcraft: War Heroes" version="0.1.5"/>
+  <info name="Warcraft: War Heroes" version="0.1.6"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="2.0"/>
   <diceSides value="10"/>
@@ -1607,8 +1607,6 @@
        <connection t1="Brackenwall Village" t2="Dustwallow Bay"/>
        <connection t1="Brackenwall Village" t2="Dustwallow Marsh"/>
        <connection t1="Brackenwall Village" t2="Witch Hill"/>
-       <connection t1="Brambleblade Ravine" t2="Blackthorn Piles"/>
-       <connection t1="Brambleblade Ravine" t2="Field of Giants"/>
        <connection t1="Brambleblade Ravine" t2="Mulgor"/>
        <connection t1="Brambleblade Ravine" t2="Red Cloud Mesa"/>
        <connection t1="Bramblescar" t2="Camp Turajo"/>
@@ -1659,7 +1657,6 @@
        <connection t1="Central Darrowmere Range" t2="Eastern Darrowmere Range"/>
        <connection t1="Central Darrowmere Range" t2="Quel Danil Lodge"/>
        <connection t1="Central Darrowmere Range" t2="Skulk Rock"/>
-       <connection t1="Cliffspring" t2="Big Foot Mountains"/>
        <connection t1="Cliffspring" t2="Irontree Woods"/>
        <connection t1="Cliffspring" t2="Tainted Mountains"/>
        <connection t1="Coast of Rut Theran" t2="Misty Shores"/>
@@ -1714,13 +1711,11 @@
        <connection t1="Dagger Highlands" t2="Zul Kunda"/>
        <connection t1="Dalaran" t2="Hillsbrad Fields"/>
        <connection t1="Dalaran" t2="Lordamere Lake"/>
-       <connection t1="Dalaran" t2="Ruins of Alterac"/>
        <connection t1="Dalaran" t2="Sepulcher"/>
        <connection t1="Dalaran" t2="Strahnbrad"/>
        <connection t1="Darkshire" t2="Deadwind Pass"/>
        <connection t1="Darkshire" t2="Raven Hill"/>
        <connection t1="Darkshire" t2="Tranquil Gardens Cemetary"/>
-       <connection t1="Darkshire" t2="Twilight Grove"/>
        <connection t1="Darkshore" t2="Northern Darkshore"/>
        <connection t1="Darkshore" t2="Southern Darkshore"/>
        <connection t1="Darkshore" t2="Veiled 4 Sea Zone"/>
@@ -1746,8 +1741,6 @@
        <connection t1="Deadwood Mountains" t2="Greenpaw Village"/>
        <connection t1="Deadwood Mountains" t2="Howling Vale"/>
        <connection t1="Deadwood Mountains" t2="Jadefire Mountains"/>
-       <connection t1="Deathknell" t2="Silverpine Forest"/>
-       <connection t1="Deathknell" t2="Skittering Dark"/>
        <connection t1="Deathknell" t2="Tirisfal Glades"/>
        <connection t1="Deathwing Mountains" t2="Eastern Stormwind Mountains"/>
        <connection t1="Deathwing Mountains" t2="Northern Stormwind Mountains"/>
@@ -1758,16 +1751,13 @@
        <connection t1="Deephome Coast" t2="Thandol Strait"/>
        <connection t1="Deephome Coast" t2="Thunderstrike Hills"/>
        <connection t1="Deephome Coast" t2="Verrall Coast"/>
-       <connection t1="Demon Fall" t2="Orgrimmar"/>
        <connection t1="Demon Fall" t2="South Ashenvale"/>
-       <connection t1="Demon Fall" t2="The Sludge Fen"/>
        <connection t1="Demon Fall" t2="Warsong Lumber Camp"/>
        <connection t1="Desolace" t2="Kodo Graveyard"/>
        <connection t1="Desolace" t2="Kolkar Village"/>
        <connection t1="Desolace" t2="Nijels Point"/>
        <connection t1="Desolace" t2="Sargeron"/>
        <connection t1="Desolace" t2="Thunder Axe Fortress"/>
-       <connection t1="Desolace" t2="Thunder Bluff"/>
        <connection t1="Dire Maul Mountains" t2="Forgotten Coast"/>
        <connection t1="Dire Maul Mountains" t2="Gordunni Badlands"/>
        <connection t1="Dire Maul Mountains" t2="Gordunni Scars"/>
@@ -1818,13 +1808,11 @@
        <connection t1="Dry Hills" t2="Mor Shan Rampart"/>
        <connection t1="Dry Hills" t2="The Barrens"/>
        <connection t1="Dun Algaz" t2="Eastern Khaz Mountains"/>
-       <connection t1="Dun Algaz" t2="Green Belt"/>
        <connection t1="Dun Algaz" t2="Grim Batol"/>
        <connection t1="Dun Algaz" t2="Thelsamar"/>
        <connection t1="Dun Algaz" t2="Wetlands"/>
        <connection t1="Dun Algaz" t2="Whelgars Excavation Site"/>
        <connection t1="Dun Garok" t2="Durnholde Keep"/>
-       <connection t1="Dun Garok" t2="Stormgarde Keep"/>
        <connection t1="Dun Garok" t2="Western Strand"/>
        <connection t1="Dun Mandarr" t2="Frostwinter Gorge"/>
        <connection t1="Dun Mandarr" t2="Northern Icerock"/>
@@ -1853,7 +1841,6 @@
        <connection t1="Dunemaul Compound" t2="Tanaris"/>
        <connection t1="Dunemaul Compound" t2="Thistleshrub Valley"/>
        <connection t1="Dunemaul Compound" t2="Valley of the Watchers"/>
-       <connection t1="Durnholde Keep" t2="Arathi Highlands"/>
        <connection t1="Durnholde Keep" t2="Stormgarde Keep"/>
        <connection t1="Durotar Coast" t2="Durotar"/>
        <connection t1="Durotar Coast" t2="Great 24 Sea Zone"/>
@@ -1871,7 +1858,6 @@
        <connection t1="Duskwood" t2="Raven Hill"/>
        <connection t1="Duskwood" t2="Tranquil Gardens Cemetary"/>
        <connection t1="Duskwood" t2="Twilight Grove"/>
-       <connection t1="Dustbelch Grotto" t2="Blackfield"/>
        <connection t1="Dustbelch Grotto" t2="Kargath"/>
        <connection t1="Dustbelch Grotto" t2="Ruins of Thaurissan"/>
        <connection t1="Dustfire Valley" t2="Thorium Point"/>
@@ -1899,7 +1885,6 @@
        <connection t1="Eastern Arathi Mountains" t2="Whitebark Village"/>
        <connection t1="Eastern Darrowmere Range" t2="Eastern Plaguelands"/>
        <connection t1="Eastern Darrowmere Range" t2="Seradane"/>
-       <connection t1="Eastern Darrowmere Range" t2="Skulk Rock"/>
        <connection t1="Eastern Gurubashi" t2="Gurubashi Coast"/>
        <connection t1="Eastern Gurubashi" t2="Gurubashi Mountains"/>
        <connection t1="Eastern Gurubashi" t2="Southern Gurubashi"/>
@@ -2118,21 +2103,14 @@
        <connection t1="Forbidding 9 Sea Zone" t2="Forbidding 10 Sea Zone"/>
        <connection t1="Forest Song" t2="Great Divide"/>
        <connection t1="Forest Song" t2="Slopes of Mount Hyjal"/>
-       <connection t1="Forest Song" t2="Valormok"/>
        <connection t1="Forest Song" t2="Warsong Lumber Camp"/>
-       <connection t1="Forests Edge" t2="Darkshire"/>
        <connection t1="Forests Edge" t2="Goldshire"/>
        <connection t1="Forests Edge" t2="Jangolode Mine"/>
-       <connection t1="Forests Edge" t2="Raven Hill"/>
        <connection t1="Forests Edge" t2="Thunder Falls"/>
        <connection t1="Forgotten Coast" t2="Dire Maul"/>
-       <connection t1="Forgotten Coast" t2="Gordunni Mountains"/>
        <connection t1="Forgotten Coast" t2="Twin Colossals"/>
-       <connection t1="Freewind Post" t2="Bloodfen Caves"/>
-       <connection t1="Freewind Post" t2="Dragonspawn Caves"/>
        <connection t1="Freewind Post" t2="The Great Lift"/>
        <connection t1="Freewind Post" t2="The Shimmeing Flats"/>
-       <connection t1="Freewind Post" t2="Zul Farrak Mountains"/>
        <connection t1="Frostsaber Rock" t2="Bridge of Sighs"/>
        <connection t1="Frostsaber Rock" t2="Northern Toothy Alps"/>
        <connection t1="Frostsaber Rock" t2="Southern Toothy Alps"/>
@@ -2186,7 +2164,6 @@
        <connection t1="Frozen 9 Sea Zone" t2="Teldrassil North Eastern Coast"/>
        <connection t1="Fungal Rock" t2="Marshals Refuge"/>
        <connection t1="Fungal Rock" t2="Marshlands"/>
-       <connection t1="Fungal Rock" t2="Zul Farrak"/>
        <connection t1="Fungal Vale" t2="Plaguewood"/>
        <connection t1="Gadgetzan" t2="Sandsorrow Watch"/>
        <connection t1="Gadgetzan" t2="Steamwheedle Port"/>
@@ -2237,14 +2214,12 @@
        <connection t1="Golden Strand" t2="Quel Thalas"/>
        <connection t1="Golden Strand" t2="Silvermoon"/>
        <connection t1="Golden Strand" t2="Tranquil Shore"/>
-       <connection t1="Goldshire" t2="Darkshire"/>
        <connection t1="Goldshire" t2="Northshire"/>
        <connection t1="Goldshire" t2="Stonecairn Lake"/>
        <connection t1="Goldshire" t2="Stormwind"/>
        <connection t1="Goldshire" t2="Thunder Falls"/>
        <connection t1="Gordunni Badlands" t2="Gordunni Scars"/>
        <connection t1="Gordunni Badlands" t2="Jademir Lake"/>
-       <connection t1="Gordunni Badlands" t2="Red Cloud Mesa"/>
        <connection t1="Gordunni Mountains" t2="Ruins of Isildien"/>
        <connection t1="Gordunni Mountains" t2="The High Wilderness"/>
        <connection t1="Great 1 Sea Zone" t2="Great 2 Sea Zone"/>
@@ -2475,7 +2450,6 @@
        <connection t1="Grimtotem Post" t2="Honors Stand"/>
        <connection t1="Grimtotem Post" t2="Sishir Canyon"/>
        <connection t1="Grimtotem Post" t2="Windshear Mines"/>
-       <connection t1="Grom Gol Base Camp" t2="Baliamah Ruins"/>
        <connection t1="Grom Gol Base Camp" t2="The Vile Reef"/>
        <connection t1="Grom Gol Base Camp" t2="Zul Kunda"/>
        <connection t1="Grove of Aessina" t2="Hyjal"/>
@@ -2491,7 +2465,6 @@
        <connection t1="Gurubashi Mountains" t2="Southern Gurubashi"/>
        <connection t1="Gurubashi Mountains" t2="The Coil"/>
        <connection t1="Gurubashi Mountains" t2="Zul Gurub"/>
-       <connection t1="Hammerfall" t2="Jintha Alor"/>
        <connection t1="Hammerfall" t2="Refuge Point"/>
        <connection t1="Hammerfall" t2="Whitebark Village"/>
        <connection t1="Hatchet Hills" t2="Noxious Grove"/>
@@ -2570,7 +2543,6 @@
        <connection t1="Kodo Graveyard" t2="Valley of Spears"/>
        <connection t1="Kolkar Village" t2="Magram Village"/>
        <connection t1="Lake Everstill" t2="Lakeshire"/>
-       <connection t1="Lake Everstill" t2="Mysty Valley"/>
        <connection t1="Lake Everstill" t2="Stonewatch Keep"/>
        <connection t1="Lake Everstill" t2="Western Redridge"/>
        <connection t1="Lakeshire" t2="Pillar of Ash"/>
@@ -2597,7 +2569,6 @@
        <connection t1="Loch Modan" t2="Valley of Kings"/>
        <connection t1="Lordaeron Coast" t2="North 11 Sea Zone"/>
        <connection t1="Lordaeron Coast" t2="North 9 Sea Zone"/>
-       <connection t1="Lordaeron Coast" t2="Scarlet Monastery"/>
        <connection t1="Lordaeron Coast" t2="The North Coast"/>
        <connection t1="Lordaeron Coast" t2="Venomweb Vale"/>
        <connection t1="Lordamere Lake" t2="Sepulcher"/>
@@ -2632,18 +2603,14 @@
        <connection t1="Maelstrom West Sea Zone" t2="Stormy 7 Sea Zone"/>
        <connection t1="Maelstrom West Sea Zone" t2="Stormy 8 Sea Zone"/>
        <connection t1="Maelstrom West Sea Zone" t2="Stormy 9 Sea Zone"/>
-       <connection t1="Magram Village" t2="Gordunni Badlands"/>
        <connection t1="Magram Village" t2="Mannoroc Coven"/>
        <connection t1="Magram Village" t2="Thunderhorn Water Well"/>
        <connection t1="Maisara" t2="Silvermoon"/>
        <connection t1="Maisara" t2="Tranquil Shore"/>
        <connection t1="Maisara" t2="Zul Aman"/>
-       <connection t1="Mannoroc Coven" t2="Jademir Lake"/>
-       <connection t1="Mannoroc Coven" t2="Ruins of Ravenwind"/>
        <connection t1="Mannoroc Coven" t2="Shadowprey Village"/>
        <connection t1="Marshals Refuge" t2="Un Goro Northern Wall"/>
        <connection t1="Marshals Refuge" t2="Valors Rest"/>
-       <connection t1="Marshlands" t2="Sandsorrow Watch"/>
        <connection t1="Marshlands" t2="Slithering Scar"/>
        <connection t1="Masters Glaive" t2="Southern Darkshore"/>
        <connection t1="Masters Glaive" t2="The Zoram Strand"/>
@@ -2660,7 +2627,6 @@
        <connection t1="Misty Reed Point" t2="Stagalbog"/>
        <connection t1="Misty Reed Point" t2="Temple of Atal Hakkar"/>
        <connection t1="Misty Reed Strand" t2="Redridge Headland"/>
-       <connection t1="Misty Reed Strand" t2="Tower of Ilgalar"/>
        <connection t1="Misty Shores" t2="Moonlight Coast"/>
        <connection t1="Misty Shores" t2="Northern Darkshore"/>
        <connection t1="Misty Shores" t2="Ruins of Mathystra"/>
@@ -2696,7 +2662,6 @@
        <connection t1="Mosh Ogg" t2="The Coil"/>
        <connection t1="Mulgor" t2="Red Cloud Mesa"/>
        <connection t1="Mulgor" t2="The Golden Plains"/>
-       <connection t1="Mysty Valley" t2="Karazhan"/>
        <connection t1="Nethergarde Keep" t2="Rockpool Plains"/>
        <connection t1="Nethergarde Keep" t2="Stonard"/>
        <connection t1="Nethergarde Keep" t2="The Dark Portal"/>
@@ -2809,7 +2774,6 @@
        <connection t1="Plaguewood" t2="Plagueworld"/>
        <connection t1="Plaguewood" t2="Tyrs Hand"/>
        <connection t1="Plaguewood" t2="Zul Marshar"/>
-       <connection t1="Plagueworld" t2="Fungal Vale"/>
        <connection t1="Plagueworld" t2="Stratholme"/>
        <connection t1="Plagueworld" t2="Zul Marshar"/>
        <connection t1="Preywood" t2="Sepulcher"/>
@@ -2818,11 +2782,9 @@
        <connection t1="Quel Thalas" t2="Silvermoon"/>
        <connection t1="Quel Thalas" t2="Stratholme"/>
        <connection t1="Quel Thalas" t2="Sungraze Peak"/>
-       <connection t1="Ratchet" t2="Senjin Village"/>
        <connection t1="Ratchet" t2="The Merchant Coast"/>
        <connection t1="Ratchet" t2="The Stagnant Oasis"/>
        <connection t1="Ratchet" t2="Thorn Hill"/>
-       <connection t1="Raven Hill" t2="Twilight Grove"/>
        <connection t1="Ravencrest Monument" t2="Ravencrest Skerry"/>
        <connection t1="Ravencrest Monument" t2="Southern Shallows"/>
        <connection t1="Ravencrest Monument" t2="Southridge Beach"/>
@@ -2830,8 +2792,6 @@
        <connection t1="Ravencrest Skerry" t2="Southern Shallows"/>
        <connection t1="Ravencrest Skerry" t2="The Ruined Reaches"/>
        <connection t1="Raynewood Retreat" t2="Slopes of Mount Hyjal"/>
-       <connection t1="Raynewood Retreat" t2="Splintertree"/>
-       <connection t1="Raynewood Retreat" t2="Warsong Lumber Camp"/>
        <connection t1="Razor Hills" t2="Senjin Village"/>
        <connection t1="Razor Hills" t2="The Scuttle Coast"/>
        <connection t1="Razor Hills" t2="Thunder Ridge"/>
@@ -2844,9 +2804,7 @@
        <connection t1="Red Mountains" t2="Uldum Mountains"/>
        <connection t1="Red Rocks" t2="The Golden Plains"/>
        <connection t1="Red Rocks" t2="Thunder Bluff"/>
-       <connection t1="Redpine Dell" t2="Hearthglen"/>
        <connection t1="Redpine Dell" t2="Ruins of Andorhall"/>
-       <connection t1="Redpine Dell" t2="Scarlet Monastery"/>
        <connection t1="Redpine Dell" t2="The Bulwark"/>
        <connection t1="Redpine Dell" t2="Western Plaquelands"/>
        <connection t1="Refuge Point" t2="Thandol Span"/>
@@ -2896,12 +2854,9 @@
        <connection t1="Seastriders Run" t2="Veiled 15 Sea Zone"/>
        <connection t1="Senjin Village" t2="The Merchant Coast"/>
        <connection t1="Senjin Village" t2="Valley of Trials"/>
-       <connection t1="Sentinel Hill" t2="Duskwood"/>
        <connection t1="Sentinel Hill" t2="Raven Hill"/>
        <connection t1="Sentinel Hill" t2="Westfall"/>
        <connection t1="Sepulcher" t2="Silverpine Forest"/>
-       <connection t1="Seradane Outback" t2="Jintha Alor"/>
-       <connection t1="Seradane Outback" t2="Revantusk"/>
        <connection t1="Seradane Outback" t2="Waterfall Dive"/>
        <connection t1="Seradane" t2="Seradane Outback"/>
        <connection t1="Seradane" t2="Skulk Rock"/>
@@ -2930,8 +2885,6 @@
        <connection t1="Slithering Scar" t2="Thistleshrub Valley"/>
        <connection t1="Slithering Scar" t2="Un Goro Southern Wall"/>
        <connection t1="Slopes of Mount Hyjal" t2="Warsong Lumber Camp"/>
-       <connection t1="Sorrow Hill" t2="Aerie Peak"/>
-       <connection t1="Sorrow Hill" t2="Darrowmere Pass"/>
        <connection t1="Sorrow Hill" t2="Strahnbrad"/>
        <connection t1="South 1 Sea Zone" t2="South 2 Sea Zone"/>
        <connection t1="South 1 Sea Zone" t2="Veiled 26 Sea Zone"/>
@@ -3041,7 +2994,6 @@
        <connection t1="Southbreak Shore" t2="Tanaris Mountains"/>
        <connection t1="Southbreak Shore" t2="Tanaris"/>
        <connection t1="Southern Ahn Quiraj" t2="The Comb"/>
-       <connection t1="Southern Arathi Mountains" t2="Northeron Mountains"/>
        <connection t1="Southern Arathi Mountains" t2="Thandol Strait"/>
        <connection t1="Southern Arathi Mountains" t2="Whitebark Village"/>
        <connection t1="Southern Darkshore" t2="The Zoram Strand"/>
@@ -3060,7 +3012,6 @@
        <connection t1="Southern Whiterocks" t2="Winterspring"/>
        <connection t1="Southridge Beach" t2="The Bay of Storms"/>
        <connection t1="Southridge Beach" t2="The Ruined Reaches"/>
-       <connection t1="Southshore Village" t2="Dun Garok"/>
        <connection t1="Southshore Village" t2="Tarren Mill"/>
        <connection t1="Southshore Village" t2="Western Strand"/>
        <connection t1="Southwind Village" t2="Staghelm Point"/>
@@ -3075,7 +3026,6 @@
        <connection t1="Starbreeze Village" t2="Teldrassil"/>
        <connection t1="Starfall Heights" t2="Starfall Village"/>
        <connection t1="Starfall Heights" t2="Stormbrag Barrow Dens"/>
-       <connection t1="Starfall Village" t2="Winterspring"/>
        <connection t1="Steamwheedle Coast" t2="Steamwheedle Port"/>
        <connection t1="Steamwheedle Coast" t2="Stonewall Mountains"/>
        <connection t1="Steamwheedle Coast" t2="Waterspring Field"/>
@@ -3103,7 +3053,6 @@
        <connection t1="Stonetalon Mountains" t2="Stonetalon Peak"/>
        <connection t1="Stonetalon Mountains" t2="Sun Rock Retreat"/>
        <connection t1="Stonetalon Peak" t2="Sun Rock Retreat"/>
-       <connection t1="Stonetalon Peak" t2="The Shrine of Aessina"/>
        <connection t1="Stonewatch Keep" t2="Tower of Ilgalar"/>
        <connection t1="Stormgarde Keep" t2="Thandol Span"/>
        <connection t1="Stormwind Harbor" t2="Stormwind Mountain Coast"/>
@@ -3126,17 +3075,14 @@
        <connection t1="Stormy 7 Sea Zone" t2="Stormy 8 Sea Zone"/>
        <connection t1="Stormy 8 Sea Zone" t2="Stormy 9 Sea Zone"/>
        <connection t1="Stormy 9 Sea Zone" t2="Stormy 10 Sea Zone"/>
-       <connection t1="Strahnbrad" t2="Aerie Peak"/>
        <connection t1="Strahnbrad" t2="Tarren Mill"/>
        <connection t1="Stratholme" t2="Sungraze Peak"/>
        <connection t1="Stratholme" t2="Zul Marshar"/>
        <connection t1="Sun Rock Retreat" t2="Webwinder Path"/>
-       <connection t1="Tainted Mountains" t2="Jadenar Mountains"/>
        <connection t1="Tainted Scar" t2="The Dark Portal"/>
        <connection t1="Tainted Scar" t2="The Red Reaches"/>
        <connection t1="Tanaris" t2="Tanaris Mountains"/>
        <connection t1="Tanaris" t2="Waterspring Field"/>
-       <connection t1="Tarren Mill" t2="Aerie Peak"/>
        <connection t1="Tarren Mill" t2="Durnholde Keep"/>
        <connection t1="Teldrassil Eastern Coast" t2="Misty Shores"/>
        <connection t1="Teldrassil Eastern Coast" t2="Teldrassil North Eastern Coast"/>
@@ -3152,7 +3098,6 @@
        <connection t1="Teldrassil" t2="Teldrassil Northern Coast"/>
        <connection t1="Teldrassil" t2="Teldrassil Southern Coast"/>
        <connection t1="Teldrassil" t2="Teldrassil Western Coast"/>
-       <connection t1="Temple of Atal Hakkar" t2="Rockpool Plains"/>
        <connection t1="Terror Run" t2="Un Goro South Western Wall"/>
        <connection t1="Terror Run" t2="Un Goro Southern Wall"/>
        <connection t1="Terror Run" t2="Un Goro Western Wall"/>
@@ -3162,7 +3107,6 @@
        <connection t1="Thandol Strait" t2="Thunderstrike Hills"/>
        <connection t1="The Bay of Storms" t2="The Forlorn Ridge"/>
        <connection t1="The Bay of Storms" t2="The Ruined Reaches"/>
-       <connection t1="The Bulwark" t2="Sorrow Hill"/>
        <connection t1="The Bulwark" t2="Undercity"/>
        <connection t1="The Bulwark" t2="Venomweb Vale"/>
        <connection t1="The Charred Vale" t2="Dragon Spine"/>
@@ -3179,10 +3123,7 @@
        <connection t1="The Forlorn Ridge" t2="Valormok"/>
        <connection t1="The Golden Plains" t2="Thunder Bluff"/>
        <connection t1="The Golden Plains" t2="Thunderhorn Water Well"/>
-       <connection t1="The Great Lift" t2="Bloodfen Caves"/>
        <connection t1="The Great Lift" t2="Thousand Needles"/>
-       <connection t1="The Great Lift" t2="Un Goro Northern Wall"/>
-       <connection t1="The Great Lift" t2="Zul Farrak Mountains"/>
        <connection t1="The Great Sunder" t2="Thunderstrike Hills"/>
        <connection t1="The Great Sunder" t2="Twilight Highlands"/>
        <connection t1="The Great Sunder" t2="Wyrms Bend"/>
@@ -3193,11 +3134,7 @@
        <connection t1="The Red Reaches" t2="Gurubashi Coast"/>
        <connection t1="The Scuttle Coast" t2="Senjin Village"/>
        <connection t1="The Scuttle Coast" t2="The Merchant Coast"/>
-       <connection t1="The Shimmeing Flats" t2="Flinty Mountains"/>
-       <connection t1="The Shimmeing Flats" t2="Stonewall Mountains"/>
-       <connection t1="The Sludge Fen" t2="Durotar"/>
        <connection t1="The Sludge Fen" t2="The Barrens"/>
-       <connection t1="The Sludge Fen" t2="Thunder Ridge"/>
        <connection t1="The Snowy Headlands" t2="Southern Icerock"/>
        <connection t1="The Snowy Headlands" t2="Southern Toothy Alps"/>
        <connection t1="The Snowy Headlands" t2="Tidefall Inlet"/>
@@ -3212,14 +3149,9 @@
        <connection t1="Thistleshrub Valley" t2="Uldum Mountains"/>
        <connection t1="Thistleshrub Valley" t2="Un Goro Southern Wall"/>
        <connection t1="Thistleshrub Valley" t2="Valley of the Watchers"/>
-       <connection t1="Thorn Hill" t2="Valley of Trials"/>
-       <connection t1="Thousand Needles" t2="Highperch Caves"/>
-       <connection t1="Thousand Needles" t2="Razorfen Kraul"/>
-       <connection t1="Thousand Needles" t2="Un Goro Northern Wall"/>
        <connection t1="Thunder Axe Fortress" t2="Valley of Spears"/>
        <connection t1="Thunder Bluff" t2="Thunderhorn Water Well"/>
        <connection t1="Thunder Ridge" t2="Far Watch Post"/>
-       <connection t1="Thunder Ridge" t2="Thorn Hill"/>
        <connection t1="Thunder Ridge" t2="Valley of Trials"/>
        <connection t1="Thunderstrike Hills" t2="Twilight Highlands"/>
        <connection t1="Thunderstrike Hills" t2="Verrall Coast"/>
@@ -3231,7 +3163,6 @@
        <connection t1="Tirisfal Glades" t2="Whispering Forest"/>
        <connection t1="Tirisfal Glades" t2="Whispering Shore"/>
        <connection t1="Toothy Alps" t2="Driftwood Shore"/>
-       <connection t1="Tranquil Gardens Cemetary" t2="Karazhan"/>
        <connection t1="Twilight Highlands" t2="Verrall Coast"/>
        <connection t1="Twilight Highlands" t2="Wildhammer Mountains"/>
        <connection t1="Uldaman" t2="Valley of Kings"/>
@@ -3246,11 +3177,7 @@
        <connection t1="Un Goro South Western Wall" t2="Un Goro Southern Wall"/>
        <connection t1="Un Goro South Western Wall" t2="Un Goro Western Wall"/>
        <connection t1="Un Goro Western Wall" t2="Valors Rest"/>
-       <connection t1="Undercity" t2="Strahnbrad"/>
        <connection t1="Undercity" t2="Venomweb Vale"/>
-       <connection t1="Valley of Kings" t2="Kargath"/>
-       <connection t1="Valley of Trials" t2="Ratchet"/>
-       <connection t1="Valley of Trials" t2="Razor Hills"/>
        <connection t1="Valormok" t2="Warsong Lumber Camp"/>
        <connection t1="Veiled 1 Sea Zone" t2="Veiled 2 Sea Zone"/>
        <connection t1="Veiled 1 Sea Zone" t2="Veiled 5 Sea Zone"/>
@@ -3297,25 +3224,101 @@
        <connection t1="Veiled 9 Sea Zone" t2="Zoram Bay"/>
        <connection t1="Verdant Thicket" t2="Southern Whiterocks"/>
        <connection t1="Verrall Coast" t2="Wildhammer Mountains"/>
-       <connection t1="Warsong Lumber Camp" t2="Orgrimmar"/>
        <connection t1="Webwinder Path" t2="Windshear Crag"/>
        <connection t1="Webwinder Path" t2="Windshear Mines"/>
        <connection t1="Western Ahn Quiraj" t2="Cape Fey"/>
        <connection t1="Western Plaquelands" t2="Darrowmere Lake"/>
-       <connection t1="Western Plaquelands" t2="Ghostlands"/>
        <connection t1="Westfall" t2="Westfall Lighthouse"/>
        <connection t1="Wetlands" t2="Whelgars Excavation Site"/>
        <connection t1="Whispering Forest" t2="Whispering Shore"/>
-       <connection t1="Whitebark Village" t2="Dun Modr"/>
        <connection t1="Wildwind Lake" t2="Woodpaw Hills"/>
-       <connection t1="Windshear Crag" t2="Bloodtooth Camp"/>
-       <connection t1="Windshear Crag" t2="Talondeep Path"/>
        <connection t1="Windshear Crag" t2="Windshear Mines"/>
        <connection t1="Zoram Bay" t2="The Zoram Strand"/>
        <connection t1="Zul Aman" t2="Duskwither Shore"/>
        <connection t1="Zul Aman" t2="Zul Marshar"/>
        <connection t1="Zul Farrak" t2="Zul Farrak Mountains"/>
+<!-- Start Airway connections -->
+       <connection t1="Brambleblade Ravine" t2="Blackthorn Piles"/>
+       <connection t1="Brambleblade Ravine" t2="Field of Giants"/>
+       <connection t1="Cliffspring" t2="Big Foot Mountains"/>
+       <connection t1="Dalaran" t2="Ruins of Alterac"/>
+       <connection t1="Darkshire" t2="Twilight Grove"/>
+       <connection t1="Deathknell" t2="Silverpine Forest"/>
+       <connection t1="Deathknell" t2="Skittering Dark"/>
+       <connection t1="Demon Fall" t2="Orgrimmar"/>
+       <connection t1="Demon Fall" t2="The Sludge Fen"/>
+       <connection t1="Desolace" t2="Thunder Bluff"/>
+       <connection t1="Dun Algaz" t2="Green Belt"/>
+       <connection t1="Dun Garok" t2="Stormgarde Keep"/>
+       <connection t1="Durnholde Keep" t2="Arathi Highlands"/>
+       <connection t1="Dustbelch Grotto" t2="Blackfield"/>
+       <connection t1="Eastern Darrowmere Range" t2="Skulk Rock"/>
+       <connection t1="Forests Edge" t2="Darkshire"/>
+       <connection t1="Forests Edge" t2="Raven Hill"/>
+       <connection t1="Forest Song" t2="Valormok"/>
+       <connection t1="Forgotten Coast" t2="Gordunni Mountains"/>
+       <connection t1="Freewind Post" t2="Bloodfen Caves"/>
+       <connection t1="Freewind Post" t2="Dragonspawn Caves"/>
+       <connection t1="Freewind Post" t2="Zul Farrak Mountains"/>
+       <connection t1="Fungal Rock" t2="Zul Farrak"/>
+       <connection t1="Goldshire" t2="Darkshire"/>
+       <connection t1="Gordunni Badlands" t2="Red Cloud Mesa"/>
+       <connection t1="Grom Gol Base Camp" t2="Baliamah Ruins"/>
+       <connection t1="Hammerfall" t2="Jintha Alor"/>
+       <connection t1="Lake Everstill" t2="Mysty Valley"/>
+       <connection t1="Lordaeron Coast" t2="Scarlet Monastery"/>
+       <connection t1="Magram Village" t2="Gordunni Badlands"/>
+       <connection t1="Mannoroc Coven" t2="Jademir Lake"/>
+       <connection t1="Mannoroc Coven" t2="Ruins of Ravenwind"/>
+       <connection t1="Marshlands" t2="Sandsorrow Watch"/>
+       <connection t1="Misty Reed Strand" t2="Tower of Ilgalar"/>
+       <connection t1="Mysty Valley" t2="Karazhan"/>
+       <connection t1="Plagueworld" t2="Fungal Vale"/>
+       <connection t1="Ratchet" t2="Senjin Village"/>
+       <connection t1="Raven Hill" t2="Twilight Grove"/>
+       <connection t1="Raynewood Retreat" t2="Splintertree"/>
+       <connection t1="Raynewood Retreat" t2="Warsong Lumber Camp"/>
+       <connection t1="Redpine Dell" t2="Hearthglen"/>
+       <connection t1="Redpine Dell" t2="Scarlet Monastery"/>
+       <connection t1="Sentinel Hill" t2="Duskwood"/>
+       <connection t1="Seradane Outback" t2="Jintha Alor"/>
+       <connection t1="Seradane Outback" t2="Revantusk"/>
+       <connection t1="Sorrow Hill" t2="Aerie Peak"/>
+       <connection t1="Sorrow Hill" t2="Darrowmere Pass"/>
+       <connection t1="Southern Arathi Mountains" t2="Northeron Mountains"/>
+       <connection t1="Southshore Village" t2="Dun Garok"/>
+       <connection t1="Starfall Village" t2="Winterspring"/>
+       <connection t1="Stonetalon Peak" t2="The Shrine of Aessina"/>
+       <connection t1="Strahnbrad" t2="Aerie Peak"/>
+       <connection t1="Tainted Mountains" t2="Jadenar Mountains"/>
+       <connection t1="Tarren Mill" t2="Aerie Peak"/>
+       <connection t1="Temple of Atal Hakkar" t2="Rockpool Plains"/>
+       <connection t1="The Bulwark" t2="Sorrow Hill"/>
+       <connection t1="The Dark Portal" t2="Rockpool Plains"/>
+       <connection t1="The Great Lift" t2="Bloodfen Caves"/>
+       <connection t1="The Great Lift" t2="Un Goro Northern Wall"/>
+       <connection t1="The Great Lift" t2="Zul Farrak Mountains"/>
+       <connection t1="The Shimmeing Flats" t2="Flinty Mountains"/>
+       <connection t1="The Shimmeing Flats" t2="Stonewall Mountains"/>
+       <connection t1="The Sludge Fen" t2="Durotar"/>
+       <connection t1="The Sludge Fen" t2="Thunder Ridge"/>
+       <connection t1="Thorn Hill" t2="Valley of Trials"/>
+       <connection t1="Thousand Needles" t2="Highperch Caves"/>
+       <connection t1="Thousand Needles" t2="Razorfen Kraul"/>
+       <connection t1="Thousand Needles" t2="Un Goro Northern Wall"/>
+       <connection t1="Thunder Ridge" t2="Thorn Hill"/>
+       <connection t1="Tranquil Gardens Cemetary" t2="Karazhan"/>
+       <connection t1="Undercity" t2="Strahnbrad"/>
+       <connection t1="Valley of Kings" t2="Kargath"/>
+       <connection t1="Valley of Trials" t2="Ratchet"/>
+       <connection t1="Valley of Trials" t2="Razor Hills"/>
+       <connection t1="Warsong Lumber Camp" t2="Orgrimmar"/>
+       <connection t1="Western Plaquelands" t2="Ghostlands"/>
+       <connection t1="Windshear Crag" t2="Bloodtooth Camp"/>
+       <connection t1="Windshear Crag" t2="Talondeep Path"/>
+       <connection t1="Whitebark Village" t2="Dun Modr"/>
        <connection t1="Zul Kunda" t2="Northern Stranglethorn"/>
+<!-- End Airway connections -->
     </map>
 
     <resourceList>
@@ -7952,7 +7955,7 @@
             <option name="tuv" value="30"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -7975,7 +7978,7 @@
             <option name="tuv" value="30"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -7997,7 +8000,7 @@
             <option name="tuv" value="60"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8019,7 +8022,7 @@
             <option name="tuv" value="60"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8041,7 +8044,7 @@
             <option name="tuv" value="90"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8063,7 +8066,7 @@
             <option name="tuv" value="90"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8085,7 +8088,7 @@
             <option name="tuv" value="120"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="4"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="4"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8107,7 +8110,7 @@
             <option name="tuv" value="120"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="4"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="4"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8131,7 +8134,7 @@
             <option name="repairsUnits" value="6:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="5"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="5"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8154,7 +8157,7 @@
             <option name="repairsUnits" value="6:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="5"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="5"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -8465,31 +8468,31 @@
 
         <attachment name="unitAttachment" attachTo="Humans-Level-1" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-3" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-4" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-5" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-6" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-7" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="createsResourcesList" value="100:XP"/>
+            <option name="createsResourcesList" value="10:XP"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Humans-Level-8" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -8605,7 +8608,7 @@
                 <option name="offensiveAttackAA" value="1"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -8680,8 +8683,8 @@
             <option name="isSuicideOnHit" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Mastiff" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="2"/>
-            <option name="defense" value="2"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
@@ -8736,7 +8739,7 @@
                 <option name="offensiveAttackAA" value="2"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -8880,7 +8883,7 @@
                 <option name="offensiveAttackAA" value="1"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="3"/>
+                <option name="maxAAattacks" value="3"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -8908,15 +8911,15 @@
             <option name="isSuicideOnDefense" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Doomguard" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="6"/>
+            <option name="defense" value="5"/>
             <option name="isSuicideOnHit" value="true"/>
             <option name="movement" value="1"/>
             <option name="transportCost" value="3"/>
-                <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
-                <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAA" value="4"/>            <!-- Targeted Power -->
+                <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -8973,7 +8976,7 @@
                 <option name="offensiveAttackAA" value="3"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -8983,7 +8986,7 @@
         </attachment>
         <attachment name="unitAttachment" attachTo="Restoring-Rain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
-            <option name="repairsUnits" value="2:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
+            <option name="repairsUnits" value="2:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu:Kodo-Tower:Abomination:Dire-Troll"/>
             <option name="maxBuiltPerPlayer" value="1"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Time-Spell" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -9159,7 +9162,7 @@
             <option name="canBlitz" value="true"/>
             <option name="isAirTransportable" value="true"/>
             <option name="transportCost" value="1"/>
-            <option name="hitPoints" value="3"/>
+            <option name="hitPoints" value="4"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
             <option name="consumesUnits" value="1:Gart"/>
@@ -9176,7 +9179,7 @@
             <option name="attack" value="6"/>
             <option name="defense" value="6"/>
             <option name="movement" value="4"/>
-            <option name="hitPoints" value="3"/>
+            <option name="hitPoints" value="4"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
             <option name="consumesUnits" value="1:Gart"/>
@@ -9194,7 +9197,7 @@
             <option name="canBlitz" value="true"/>
             <option name="transportCost" value="3"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="hitPoints" value="4"/>
+            <option name="hitPoints" value="5"/>
             <option name="tuv" value="100"/>
             <option name="maxBuiltPerPlayer" value="1"/>
             <option name="consumesUnits" value="1:Gart"/>
@@ -9288,7 +9291,7 @@
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -9307,7 +9310,7 @@
                 <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9327,7 +9330,7 @@
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9366,7 +9369,7 @@
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9384,7 +9387,7 @@
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9415,7 +9418,7 @@
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9433,7 +9436,7 @@
                 <option name="attackAA" value="3"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9457,7 +9460,7 @@
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9474,7 +9477,7 @@
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9501,7 +9504,7 @@
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9524,7 +9527,7 @@
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9591,7 +9594,7 @@
                 <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -9617,7 +9620,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Missile"/>                 <!-- Ranged Type -->
@@ -9646,7 +9649,7 @@
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9673,7 +9676,7 @@
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9693,7 +9696,7 @@
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9726,7 +9729,7 @@
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Gun"/>                     <!-- Ranged Type -->
@@ -9752,7 +9755,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9770,7 +9773,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -9793,8 +9796,9 @@
             <option name="canProduceXUnits" value="1"/>
                 <option name="offensiveAttackAA" value="5"/>            <!-- Targeted Power -->
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
+                <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Missile"/>                 <!-- Ranged Type -->
@@ -9827,7 +9831,7 @@
                 <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Mega-Cannon"/>             <!-- Ranged Type -->
@@ -9872,7 +9876,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Burning-Oil"/>             <!-- Ranged Type -->
@@ -9890,7 +9894,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9909,7 +9913,7 @@
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -9929,7 +9933,7 @@
                 <option name="attackAA" value="8"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -9954,7 +9958,7 @@
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -9984,7 +9988,7 @@
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Burning-Oil"/>             <!-- Ranged Type -->
@@ -10108,7 +10112,7 @@
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -10325,7 +10329,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="3:false:Loot-Level-10"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Dragon-Breath"/>           <!-- Ranged Type -->
@@ -10339,7 +10343,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="3:false:Loot-Level-10"/>
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Dragon-Breath"/>           <!-- Ranged Type -->
@@ -10353,7 +10357,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="3:false:Loot-Level-10"/>
                 <option name="attackAA" value="9"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Dragon-Breath"/>           <!-- Ranged Type -->
@@ -10386,7 +10390,7 @@
             <option name="createsResourcesList" value="3:Gold"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -10451,7 +10455,7 @@
             <option name="createsResourcesList" value="1:PUs"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -10495,7 +10499,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="1:false:Loot-Level-5"/>
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -10533,7 +10537,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="1:false:Loot-Level-4"/>
                 <option name="attackAA" value="6"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -10562,7 +10566,7 @@
             <option name="createsResourcesList" value="1:XP"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -10639,7 +10643,7 @@
             <option name="createsResourcesList" value="1:Food"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="2"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -10736,7 +10740,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="1:false:Loot-Level-3"/>
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -10789,7 +10793,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="1:false:Loot-Level-3"/>
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -10814,7 +10818,7 @@
             <option name="whenHitPointsDamagedChangesInto" value="1:false:Loot-Level-1"/>
                 <option name="attackAA" value="2"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -11203,7 +11207,7 @@
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -11219,7 +11223,7 @@
                 <option name="attackAA" value="4"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -11235,7 +11239,7 @@
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -11251,7 +11255,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -11268,7 +11272,7 @@
                 <option name="attackAA" value="9"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Magic"/>                   <!-- Ranged Type -->
@@ -11291,7 +11295,7 @@
                 <option name="attackAA" value="7"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
@@ -11349,7 +11353,7 @@
                 <option name="attackAA" value="1"/>                     <!-- Targeted Power -->
                 <option name="offensiveAttackAAmaxDieSides" value="10"/>
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Explosive"/>               <!-- Ranged Type -->
@@ -11423,7 +11427,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11445,7 +11449,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11467,7 +11471,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11489,7 +11493,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11511,7 +11515,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11533,7 +11537,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11555,7 +11559,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11577,7 +11581,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11599,7 +11603,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -11624,7 +11628,7 @@
             <option name="repairsUnits" value="2:Arthur:Khorman:Marryk:Ayanna:Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
                 <option name="attackAA" value="5"/>                     <!-- Targeted Power -->
                 <option name="attackAAmaxDieSides" value="10"/>
-                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Power -->
+                <option name="maxAAattacks" value="1"/>                 <!-- Targeted Rolls -->
                 <option name="maxRoundsAA" value="-1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Wall-Archer"/>             <!-- Ranged Type -->
@@ -15679,7 +15683,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="-8"/>
+            <option name="bonus" value="-10"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Judgment Spell"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15689,7 +15693,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="-6"/>
+            <option name="bonus" value="-10"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Divine Shield"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15699,7 +15703,7 @@
             <option name="number" value="10"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="-2"/>
+            <option name="bonus" value="-1"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Holy Protection"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15719,7 +15723,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="7"/>
+            <option name="bonus" value="10"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Agility Potion"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15729,7 +15733,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="7"/>
+            <option name="bonus" value="10"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Rage Potion"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15774,11 +15778,11 @@
             <option name="bonusType" value="Chaotic Signalizer"/>
         </attachment>
         <attachment name="supportAttachmentBewilderment" attachTo="Marryk" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="side" value="offence"/>
+            <option name="side" value="offence:defence"/>
             <option name="number" value="1"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="Thrall:Gart:Cat-Form:Owl-Form:Bear-Form:Sevis:Sian-tsu"/>
-            <option name="bonus" value="-5"/>
+            <option name="bonus" value="-4"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Bewilderment"/>
         </attachment>
@@ -15788,7 +15792,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="Mastiff"/>
-            <option name="bonus" value="1"/>
+            <option name="bonus" value="2"/>
             <option name="dice" value="roll"/>
             <option name="bonusType" value="Attack Dog"/>
         </attachment>
@@ -15797,7 +15801,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="Mastiff"/>
-            <option name="bonus" value="1"/>
+            <option name="bonus" value="2"/>
             <option name="dice" value="roll"/>
             <option name="bonusType" value="Guard Dog"/>
         </attachment>
@@ -15815,7 +15819,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="Ayanna"/>
-            <option name="bonus" value="1"/>
+            <option name="bonus" value="2"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonusType" value="Power Shot"/>
         </attachment>
@@ -15836,7 +15840,7 @@
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllSeaUnits$"/>
             <option name="bonus" value="-1"/>
-            <option name="dice" value="strength"/>
+            <option name="dice" value="AAroll"/>
             <option name="bonusType" value="Earthquake"/>
             <option name="players" value="$AllPlayers$"/>
         </attachment>
@@ -15845,7 +15849,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="Arthur:Khorman:Marryk:Ayanna"/>
-            <option name="bonus" value="-3"/>
+            <option name="bonus" value="-2"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Foresight"/>
         </attachment>
@@ -15854,18 +15858,18 @@
             <option name="number" value="1"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="Arthur:Khorman:Marryk:Ayanna"/>
-            <option name="bonus" value="-3"/>
+            <option name="bonus" value="-2"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonusType" value="Forewarning"/>
         </attachment>
-        <attachment name="supportAttachmentOrc-Big-Boss" attachTo="Thrall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentLord-of-the-Clans" attachTo="Thrall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="side" value="offence"/>
             <option name="number" value="10"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
             <option name="bonus" value="1"/>
             <option name="dice" value="strength"/>
-            <option name="bonusType" value="Orc Big Boss"/>
+            <option name="bonusType" value="Lord of the Clans"/>
         </attachment>
         
         <attachment name="supportAttachmentLunar-Fire" attachTo="Lunar-Fire" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
@@ -15873,7 +15877,7 @@
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
-            <option name="bonus" value="-1"/>
+            <option name="bonus" value="-3"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonusType" value="Lunar Fire"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15883,7 +15887,7 @@
             <option name="number" value="5"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
-            <option name="bonus" value="1"/>
+            <option name="bonus" value="3"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonusType" value="Solar Fire"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15900,11 +15904,11 @@
         </attachment>
 
         <attachment name="supportAttachmentEvil-Curse" attachTo="Sevis" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-            <option name="side" value="offence"/>
+            <option name="side" value="defence"/>
             <option name="number" value="5"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="-1"/>
+            <option name="bonus" value="-2"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Evil Curse"/>
         </attachment>
@@ -15934,7 +15938,7 @@
             <option name="number" value="5"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="1"/>
+            <option name="bonus" value="2"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Restoration"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15944,7 +15948,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="allied"/>
             <option name="unitType" value="$AllLandUnits$:$AllAirUnits$"/>
-            <option name="bonus" value="1"/>
+            <option name="bonus" value="3"/>
             <option name="dice" value="roll"/>
             <option name="bonusType" value="Time Spell"/>
             <option name="players" value="$AllPlayers$"/>
@@ -15963,7 +15967,7 @@
             <option name="number" value="1"/>
             <option name="faction" value="enemy"/>
             <option name="unitType" value="Arthur:Khorman:Marryk:Ayanna"/>
-            <option name="bonus" value="-5"/>
+            <option name="bonus" value="-8"/>
             <option name="dice" value="strength"/>
             <option name="bonusType" value="Voodoo Doll"/>
         </attachment>
@@ -21263,6 +21267,12 @@
             <option name="removeUnits" value="all:Frost-Spell" count="1"/>
             <option name="players" value="$AllPlayers$"/>
         </attachment>
+        <attachment name="triggerAttachment_The_Frost_fades_away" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionEveryTurn"/>
+            <option name="when" value="before:GnomesCombatMove"/>
+            <option name="removeUnits" value="all:Frost" count="1"/>
+            <option name="players" value="$AllPlayers$"/>
+        </attachment>
 
         <attachment name="triggerAttachment_The_Ceremonial-Fire_burns_out" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionEveryTurn"/>
@@ -21289,6 +21299,12 @@
             <option name="removeUnits" value="all:Earthquake-Spell" count="1"/>
             <option name="players" value="$AllPlayers$"/>
         </attachment>
+        <attachment name="triggerAttachment_The_Earthquake_stops" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionEveryTurn"/>
+            <option name="when" value="before:OrcsCombatMove"/>
+            <option name="removeUnits" value="all:Earthquake" count="1"/>
+            <option name="players" value="$AllPlayers$"/>
+        </attachment>
 
         <attachment name="triggerAttachment_Gart_shapeshifts_back_to_his_original_form" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionEveryTurn"/>
@@ -21312,6 +21328,24 @@
             <option name="conditions" value="conditionEveryTurn"/>
             <option name="when" value="after:TaurenBattle"/>
             <option name="removeUnits" value="all:Root-Spell" count="1"/>
+            <option name="players" value="$AllPlayers$"/>
+        </attachment>
+        <attachment name="triggerAttachment_The_Solar-Fire_fades_away" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionEveryTurn"/>
+            <option name="when" value="before:TaurenCombatMove"/>
+            <option name="removeUnits" value="all:Solar-Fire" count="1"/>
+            <option name="players" value="$AllPlayers$"/>
+        </attachment>
+        <attachment name="triggerAttachment_The_Roots_fade_away" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionEveryTurn"/>
+            <option name="when" value="before:TaurenCombatMove"/>
+            <option name="removeUnits" value="all:Roots" count="1"/>
+            <option name="players" value="$AllPlayers$"/>
+        </attachment>
+        <attachment name="triggerAttachment_The_Lunar-Fire_fades_away" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionEveryTurn"/>
+            <option name="when" value="before:TaurenCombatMove"/>
+            <option name="removeUnits" value="all:Lunar-Fire" count="1"/>
             <option name="players" value="$AllPlayers$"/>
         </attachment>
 
@@ -41064,7 +41098,7 @@
         </attachment>
         <attachment name="triggerAttachment_Khorman_has_reached_level_6_A" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="unitType" value="Khorman"/>
-            <option name="unitProperty" value="defense" count="5"/>
+            <option name="unitProperty" value="defense" count="6"/>
             <option name="when" value="before:DwarvesPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -41093,7 +41127,7 @@
         </attachment>
         <attachment name="triggerAttachment_Khorman_has_reached_level_7_A" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="unitType" value="Khorman"/>
-            <option name="unitProperty" value="attack" count="6"/>
+            <option name="unitProperty" value="attack" count="7"/>
             <option name="when" value="before:DwarvesPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -41773,7 +41807,7 @@
             <option name="unitPresence" value="Orcs-Level-7" count="1"/>
         </attachment>
         <attachment name="triggerAttachment_Thrall_has_reached_level_8_A" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="support" value="supportAttachmentOrc-Big-Boss"/>
+            <option name="support" value="supportAttachmentLord-of-the-Clans"/>
             <option name="when" value="before:OrcsPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -44248,7 +44282,8 @@
             <unitPlacement unitType="Cavalry" territory="Stormwind" quantity="1" owner="Humans"/>
             <unitPlacement unitType="Footmen" territory="Ironforge" quantity="1" owner="Dwarves"/>
             <unitPlacement unitType="Cavalry" territory="Ironforge" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Footmen" territory="Ironforge Airfield" quantity="2" owner="Dwarves"/>
+            <unitPlacement unitType="Footmen" territory="Ironforge Airfield" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Flying-Machine" territory="Ironforge Airfield" quantity="1" owner="Dwarves"/>
             <unitPlacement unitType="Footmen" territory="Booty Bay" quantity="3" owner="Gnomes"/>
             <unitPlacement unitType="Cavalry" territory="Booty Bay" quantity="1" owner="Gnomes"/>
             <unitPlacement unitType="Footmen" territory="Ban Ethil" quantity="3" owner="Night-Elves"/>
@@ -44599,16 +44634,16 @@
             <resourceGiven player="Tauren" resource="PUs" quantity="0"/>
             <resourceGiven player="Undead" resource="PUs" quantity="0"/>
             <resourceGiven player="Trolls" resource="PUs" quantity="0"/>
-            <!-- <resourceGiven player="Humans" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Dwarves" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Gnomes" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Night-Elves" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Orcs" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Tauren" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Undead" resource="Wood" quantity="1000"/>
-            <resourceGiven player="Trolls" resource="Wood" quantity="1000"/> -->
+            <!-- <resourceGiven player="Humans" resource="XP" quantity="1400"/>
+            <resourceGiven player="Dwarves" resource="XP" quantity="1400"/>
+            <resourceGiven player="Gnomes" resource="XP" quantity="1400"/>
+            <resourceGiven player="Night-Elves" resource="XP" quantity="1400"/>
+            <resourceGiven player="Orcs" resource="XP" quantity="1400"/>
+            <resourceGiven player="Tauren" resource="XP" quantity="1400"/>
+            <resourceGiven player="Undead" resource="XP" quantity="1400"/>
+            <resourceGiven player="Trolls" resource="XP" quantity="1400"/> -->
         </resourceInitialize>
-<!-- Test full level up to level 8, then give 1390 XP to the player from start -->
+<!-- To test a full level up, to level 8, you must give 1400 XP to the player from start -->
 
         <relationshipInitialize>
             <relationship type="Allied" player1="Humans" player2="Dwarves" roundValue="1"/>
@@ -45477,7 +45512,7 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_13.png"/>All players have access to Special Land Units.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_14.png"/>Many Land Units have purchasable Veteran and Elite variants.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_15.png"/>Veterans and Elites are affected by the same buffs and debuffs as standard units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_16.png"/>Catapults have Shots that targets specifically Factories and only Land Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_16.png"/>Catapults have Shots that target only Factories and Land Units.</span><br>
 <center><img src="NotesBar05.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Sea Units</b></span><br><br>
 <center><img src="NotesSeaUnits.png"/></center><br>
@@ -45488,14 +45523,14 @@
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_20.png"/>Ports can only produce 1 Sea Unit every Turn (Except Stormwind Port).</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_21.png"/>Some Ports have a strong allegiance to a certain Race and will revert to their control if liberated by an ally of that Race.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_22.png"/>Resources are found all over the ocean and can be seized by Sea Units.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_23.png"/>Trebuchets have Shots that targets specifically Factories and only Sea Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_23.png"/>Trebuchets have Shots that target only Factories and Sea Units.</span><br>
 <center><img src="NotesBar06.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Air Units</b></span><br><br>
 <center><img src="NotesAirUnits.png"/></center><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_24.png"/>Some players have access to Special Air Units.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_25.png"/>Air Units can fly over rivers and mountain ridges, wherever Airways exist.</span><br>
 <span style="font-size:11px;color:C0C0C0"><img src="textarrow_26.png"/>Air Units do not need to land in friendly territories at the end of Movement. They can stay in the air, even over water.</span><br>
-<span style="font-size:11px;color:C0C0C0"><img src="textarrow_27.png"/>Ballistas have Shots that targets specifically Factories and only Air Units.</span><br>
+<span style="font-size:11px;color:C0C0C0"><img src="textarrow_27.png"/>Ballistas have Shots that target only Factories and Air Units.</span><br>
 <center><img src="NotesBar07.png"/></center>
 <span style="font-size:13px;color:FFCC33"><b>Factories</b></span><br><br>
 <center><img src="NotesFactories.png"/></center><br>
