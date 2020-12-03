@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="Warcraft: War Heroes" version="0.1.6"/>
+  <info name="Warcraft: War Heroes" version="0.1.61"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="2.0"/>
   <diceSides value="10"/>
@@ -30444,7 +30444,7 @@
         </attachment>
         <attachment name="conditionGnomesDoNotHaveABetterRangedWeaponThanBlunderbuss" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Marryk Ranged Weapon" count="1"/>
-            <option name="unitPresence" value="Fine-Wand:Flintlock-Pistol:Quality-Bow:Superior-Crossbow:Mystical-Scepter:Boomstick:Wizard-Staff:Arcane-Wand:Magic-Bow" count="1"/>
+            <option name="unitPresence" value="Superior-Crossbow:Mystical-Scepter:Boomstick:Wizard-Staff:Arcane-Wand:Magic-Bow" count="1"/>
             <option name="invert" value="true"/>
         </attachment>
         <attachment name="triggerHero_of_Gnomes_get_Blunderbuss" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -30470,6 +30470,7 @@
             <option name="placement" value="Ayanna Ranged Weapon:Blunderbuss" count="1"/>
             <option name="when" value="before:Night-ElvesEndTurn"/>
         </attachment>
+
         <attachment name="conditionOrcsCanGrabBlunderbuss" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
             <option name="unitPresence" value="Blunderbuss-Item" count="1"/>
@@ -30792,7 +30793,7 @@
             <option name="placement" value="Sian-tsu Ranged Weapon:Mystical-Scepter" count="1"/>
             <option name="when" value="before:TrollsEndTurn"/>
         </attachment>
-        
+
         <attachment name="conditionHumansCanGrabBoomstick" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
             <option name="unitPresence" value="Boomstick-Item" count="1"/>
@@ -30921,7 +30922,7 @@
             <option name="placement" value="Sian-tsu Ranged Weapon:Boomstick" count="1"/>
             <option name="when" value="before:TrollsEndTurn"/>
         </attachment>
-        
+
         <attachment name="conditionHumansCanGrabWizard-Staff" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
             <option name="unitPresence" value="Wizard-Staff-Item" count="1"/>
@@ -31153,7 +31154,7 @@
         </attachment>
         <attachment name="conditionUndeadDoNotHaveABetterRangedWeaponThanArcane-Wand" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Sevis Ranged Weapon" count="1"/>
-            <option name="unitPresence" value="Wizard-Staff:Magic-Bow" count="1"/>
+            <option name="unitPresence" value="Magic-Bow" count="1"/>
             <option name="invert" value="true"/>
         </attachment>
         <attachment name="triggerHero_of_Undead_get_Arcane-Wand" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
