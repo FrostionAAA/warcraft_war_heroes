@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-  <info name="Warcraft: War Heroes" version="0.1.6"/>
+  <info name="Warcraft: War Heroes" version="0.1.7"/>
   <loader javaClass="games.strategy.triplea.TripleA"/>
   <triplea minimumVersion="2.0"/>
   <diceSides value="10"/>
@@ -3827,7 +3827,7 @@
         <unit name="Caltrops-Item"/>
         <unit name="Cavaliering-Item"/>
         <unit name="Chain-of-Life-Item"/>
-        <unit name="Equestrian-Baton-Item"/>
+        <unit name="Assault-Baton-Item"/>
         <unit name="Compendium-of-Creeps-Item"/>
         <unit name="Crossbow-Tactics-Item"/>
         <unit name="Crown-of-Kings-Item"/>
@@ -3915,7 +3915,7 @@
         <unit name="Caltrops"/>
         <unit name="Cavaliering"/>
         <unit name="Chain-of-Life"/>
-        <unit name="Equestrian-Baton"/>
+        <unit name="Assault-Baton"/>
         <unit name="Compendium-of-Creeps"/>
         <unit name="Crossbow"/>
         <unit name="Crossbow-Tactics"/>
@@ -6003,9 +6003,9 @@
             <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Chain-of-Life-Item" quantity="1"/>
         </productionRule>
-        <productionRule name="buyEquestrian-Baton-Item">
+        <productionRule name="buyAssault-Baton-Item">
             <cost resource="PUs" quantity="20"/>
-            <result resourceOrUnit="Equestrian-Baton-Item" quantity="1"/>
+            <result resourceOrUnit="Assault-Baton-Item" quantity="1"/>
         </productionRule>
         <productionRule name="buyCompendium-of-Creeps-Item">
             <cost resource="PUs" quantity="5"/>
@@ -6352,9 +6352,9 @@
             <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Chain-of-Life" quantity="1"/>
         </productionRule>
-        <productionRule name="buyEquestrian-Baton">
+        <productionRule name="buyAssault-Baton">
             <cost resource="PUs" quantity="20"/>
-            <result resourceOrUnit="Equestrian-Baton" quantity="1"/>
+            <result resourceOrUnit="Assault-Baton" quantity="1"/>
         </productionRule>
         <productionRule name="buyCompendium-of-Creeps">
             <cost resource="PUs" quantity="5"/>
@@ -7842,7 +7842,7 @@
                 <option name="maxRoundsAA" value="1"/>
                 <option name="isAAforCombatOnly" value="true"/>
                 <option name="typeAA" value="Crush"/>                   <!-- Ranged Type -->
-                <option name="targetsAA" value="$AllLandUnits$:$AllAirUnits$:$AllSeaUnits$"/>
+                <option name="targetsAA" value="$AllSeaUnits$"/>
                 <option name="damageableAA" value="true"/>
                 <option name="mayOverStackAA" value="true"/>
         </attachment>
@@ -11690,7 +11690,7 @@
         <attachment name="unitAttachment" attachTo="Chain-of-Life-Item" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
         </attachment>
-        <attachment name="unitAttachment" attachTo="Equestrian-Baton-Item" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+        <attachment name="unitAttachment" attachTo="Assault-Baton-Item" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Compendium-of-Creeps-Item" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -11956,7 +11956,7 @@
         <attachment name="unitAttachment" attachTo="Chain-of-Life" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
         </attachment>
-        <attachment name="unitAttachment" attachTo="Equestrian-Baton" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+        <attachment name="unitAttachment" attachTo="Assault-Baton" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Compendium-of-Creeps" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -17253,14 +17253,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Humans-uses-Equestrian-Baton" attachTo="Arthur" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Humans-uses-Assault-Baton" attachTo="Arthur" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Humans-uses-Ring-of-Amplification" attachTo="Arthur" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -17651,14 +17651,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Dwarves-uses-Equestrian-Baton" attachTo="Khorman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Dwarves-uses-Assault-Baton" attachTo="Khorman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Dwarves-uses-Ring-of-Amplification" attachTo="Khorman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -18049,14 +18049,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Gnomes-uses-Equestrian-Baton" attachTo="Marryk" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Gnomes-uses-Assault-Baton" attachTo="Marryk" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Gnomes-uses-Ring-of-Amplification" attachTo="Marryk" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -18447,14 +18447,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Night-Elves-uses-Equestrian-Baton" attachTo="Ayanna" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Night-Elves-uses-Assault-Baton" attachTo="Ayanna" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Night-Elves-uses-Ring-of-Amplification" attachTo="Ayanna" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -18845,14 +18845,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Orcs-uses-Equestrian-Baton" attachTo="Thrall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Orcs-uses-Assault-Baton" attachTo="Thrall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Orcs-uses-Ring-of-Amplification" attachTo="Thrall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -19243,14 +19243,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Tauren-uses-Equestrian-Baton" attachTo="Gart" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Tauren-uses-Assault-Baton" attachTo="Gart" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Tauren-uses-Ring-of-Amplification" attachTo="Gart" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -19641,14 +19641,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Undead-uses-Equestrian-Baton" attachTo="Sevis" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Undead-uses-Assault-Baton" attachTo="Sevis" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Undead-uses-Ring-of-Amplification" attachTo="Sevis" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -20039,14 +20039,14 @@
             <option name="number" value="5"/>
             <option name="bonusType" value="Steel Foot Standard"/>
         </attachment>
-        <attachment name="supportAttachmentHero-of-Trolls-uses-Equestrian-Baton" attachTo="Sian-tsu" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+        <attachment name="supportAttachmentHero-of-Trolls-uses-Assault-Baton" attachTo="Sian-tsu" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllCrushAttackers$"/>
             <option name="faction" value="allied"/>
             <option name="side" value="offence:defence"/>
             <option name="dice" value="AAstrength"/>
             <option name="bonus" value="3"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="Equestrian Baton"/>
+            <option name="bonusType" value="Assault Baton"/>
         </attachment>
         <attachment name="supportAttachmentHero-of-Trolls-uses-Ring-of-Amplification" attachTo="Sian-tsu" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="$AllMagicAttackers$"/>
@@ -24914,84 +24914,84 @@
             <option name="when" value="before:TrollsEndTurn"/>
         </attachment>
 
-        <attachment name="conditionHumansGetEquestrian-Baton" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionHumansGetAssault-Baton" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Humans_get_Equestrian-Baton" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionHumansGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Arthur Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Humans_get_Assault-Baton" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionHumansGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Arthur Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:HumansEndTurn"/>
         </attachment>
-        <attachment name="conditionDwarvesGetEquestrian-Baton" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionDwarvesGetAssault-Baton" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Dwarves_get_Equestrian-Baton" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionDwarvesGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Khorman Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Dwarves_get_Assault-Baton" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionDwarvesGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Khorman Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:DwarvesEndTurn"/>
         </attachment>
-        <attachment name="conditionGnomesGetEquestrian-Baton" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionGnomesGetAssault-Baton" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Gnomes_get_Equestrian-Baton" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionGnomesGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Marryk Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Gnomes_get_Assault-Baton" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionGnomesGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Marryk Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:GnomesEndTurn"/>
         </attachment>
-        <attachment name="conditionNight-ElvesGetEquestrian-Baton" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionNight-ElvesGetAssault-Baton" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Night-Elves_get_Equestrian-Baton" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionNight-ElvesGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Ayanna Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Night-Elves_get_Assault-Baton" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionNight-ElvesGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Ayanna Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:Night-ElvesEndTurn"/>
         </attachment>
-        <attachment name="conditionOrcsGetEquestrian-Baton" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionOrcsGetAssault-Baton" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Orcs_get_Equestrian-Baton" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionOrcsGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Thrall Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Orcs_get_Assault-Baton" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionOrcsGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Thrall Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:OrcsEndTurn"/>
         </attachment>
-        <attachment name="conditionTaurenGetEquestrian-Baton" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionTaurenGetAssault-Baton" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Tauren_get_Equestrian-Baton" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionTaurenGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Gart Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Tauren_get_Assault-Baton" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionTaurenGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Gart Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:TaurenEndTurn"/>
         </attachment>
-        <attachment name="conditionUndeadGetEquestrian-Baton" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionUndeadGetAssault-Baton" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Undead_get_Equestrian-Baton" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionUndeadGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Sevis Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Undead_get_Assault-Baton" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionUndeadGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Sevis Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:UndeadEndTurn"/>
         </attachment>
-        <attachment name="conditionTrollsGetEquestrian-Baton" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionTrollsGetAssault-Baton" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton-Item" count="1"/>
+            <option name="unitPresence" value="Assault-Baton-Item" count="1"/>
         </attachment>
-        <attachment name="triggerHero_of_Trolls_get_Equestrian-Baton" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionTrollsGetEquestrian-Baton"/>
-            <option name="removeUnits" value="all:Equestrian-Baton-Item" count="1"/>
-            <option name="placement" value="Sian-tsu Backpack:Equestrian-Baton" count="1"/>
+        <attachment name="triggerHero_of_Trolls_get_Assault-Baton" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionTrollsGetAssault-Baton"/>
+            <option name="removeUnits" value="all:Assault-Baton-Item" count="1"/>
+            <option name="placement" value="Sian-tsu Backpack:Assault-Baton" count="1"/>
             <option name="when" value="before:TrollsEndTurn"/>
         </attachment>
 
@@ -30444,7 +30444,7 @@
         </attachment>
         <attachment name="conditionGnomesDoNotHaveABetterRangedWeaponThanBlunderbuss" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Marryk Ranged Weapon" count="1"/>
-            <option name="unitPresence" value="Fine-Wand:Flintlock-Pistol:Quality-Bow:Superior-Crossbow:Mystical-Scepter:Boomstick:Wizard-Staff:Arcane-Wand:Magic-Bow" count="1"/>
+            <option name="unitPresence" value="Superior-Crossbow:Mystical-Scepter:Boomstick:Wizard-Staff:Arcane-Wand:Magic-Bow" count="1"/>
             <option name="invert" value="true"/>
         </attachment>
         <attachment name="triggerHero_of_Gnomes_get_Blunderbuss" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -30470,6 +30470,7 @@
             <option name="placement" value="Ayanna Ranged Weapon:Blunderbuss" count="1"/>
             <option name="when" value="before:Night-ElvesEndTurn"/>
         </attachment>
+
         <attachment name="conditionOrcsCanGrabBlunderbuss" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
             <option name="unitPresence" value="Blunderbuss-Item" count="1"/>
@@ -30792,7 +30793,7 @@
             <option name="placement" value="Sian-tsu Ranged Weapon:Mystical-Scepter" count="1"/>
             <option name="when" value="before:TrollsEndTurn"/>
         </attachment>
-        
+
         <attachment name="conditionHumansCanGrabBoomstick" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
             <option name="unitPresence" value="Boomstick-Item" count="1"/>
@@ -30921,7 +30922,7 @@
             <option name="placement" value="Sian-tsu Ranged Weapon:Boomstick" count="1"/>
             <option name="when" value="before:TrollsEndTurn"/>
         </attachment>
-        
+
         <attachment name="conditionHumansCanGrabWizard-Staff" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="map" count="1"/>
             <option name="unitPresence" value="Wizard-Staff-Item" count="1"/>
@@ -31153,7 +31154,7 @@
         </attachment>
         <attachment name="conditionUndeadDoNotHaveABetterRangedWeaponThanArcane-Wand" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Sevis Ranged Weapon" count="1"/>
-            <option name="unitPresence" value="Wizard-Staff:Magic-Bow" count="1"/>
+            <option name="unitPresence" value="Magic-Bow" count="1"/>
             <option name="invert" value="true"/>
         </attachment>
         <attachment name="triggerHero_of_Undead_get_Arcane-Wand" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -33726,13 +33727,13 @@
             <option name="when" value="after:HumansEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenHumans-have-Equestrian-Baton-in-backpack" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenHumans-have-Assault-Baton-in-backpack" attachTo="Humans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Arthur Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Humans_has_the_Equestrian-Baton" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenHumans-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Humans-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Humans_has_the_Assault-Baton" attachTo="Humans" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenHumans-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Humans-uses-Assault-Baton"/>
             <option name="when" value="after:HumansEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -34353,13 +34354,13 @@
             <option name="when" value="after:DwarvesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenDwarves-have-Equestrian-Baton-in-backpack" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenDwarves-have-Assault-Baton-in-backpack" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Khorman Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Dwarves_has_the_Equestrian-Baton" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenDwarves-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Dwarves-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Dwarves_has_the_Assault-Baton" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenDwarves-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Dwarves-uses-Assault-Baton"/>
             <option name="when" value="after:DwarvesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -34980,13 +34981,13 @@
             <option name="when" value="after:GnomesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenGnomes-have-Equestrian-Baton-in-backpack" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenGnomes-have-Assault-Baton-in-backpack" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Marryk Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Gnomes_has_the_Equestrian-Baton" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenGnomes-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Gnomes-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Gnomes_has_the_Assault-Baton" attachTo="Gnomes" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenGnomes-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Gnomes-uses-Assault-Baton"/>
             <option name="when" value="after:GnomesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -35607,13 +35608,13 @@
             <option name="when" value="after:Night-ElvesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenNight-Elves-have-Equestrian-Baton-in-backpack" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenNight-Elves-have-Assault-Baton-in-backpack" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Ayanna Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Night-Elves_has_the_Equestrian-Baton" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenNight-Elves-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Night-Elves-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Night-Elves_has_the_Assault-Baton" attachTo="Night-Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenNight-Elves-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Night-Elves-uses-Assault-Baton"/>
             <option name="when" value="after:Night-ElvesEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -36238,13 +36239,13 @@
             <option name="when" value="after:OrcsEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenOrcs-have-Equestrian-Baton-in-backpack" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenOrcs-have-Assault-Baton-in-backpack" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Thrall Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Orcs_has_the_Equestrian-Baton" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenOrcs-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Orcs-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Orcs_has_the_Assault-Baton" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenOrcs-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Orcs-uses-Assault-Baton"/>
             <option name="when" value="after:OrcsEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -36869,13 +36870,13 @@
             <option name="when" value="after:TaurenEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenTauren-have-Equestrian-Baton-in-backpack" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenTauren-have-Assault-Baton-in-backpack" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Gart Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Tauren_has_the_Equestrian-Baton" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenTauren-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Tauren-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Tauren_has_the_Assault-Baton" attachTo="Tauren" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenTauren-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Tauren-uses-Assault-Baton"/>
             <option name="when" value="after:TaurenEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -37500,13 +37501,13 @@
             <option name="when" value="after:UndeadEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenUndead-have-Equestrian-Baton-in-backpack" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenUndead-have-Assault-Baton-in-backpack" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Sevis Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Undead_has_the_Equestrian-Baton" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenUndead-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Undead-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Undead_has_the_Assault-Baton" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenUndead-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Undead-uses-Assault-Baton"/>
             <option name="when" value="after:UndeadEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -38131,13 +38132,13 @@
             <option name="when" value="after:TrollsEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmenTrolls-have-Equestrian-Baton-in-backpack" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmenTrolls-have-Assault-Baton-in-backpack" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="directPresenceTerritories" value="Sian-tsu Backpack" count="1"/>
-            <option name="unitPresence" value="Equestrian-Baton" count="1"/>
+            <option name="unitPresence" value="Assault-Baton" count="1"/>
         </attachment>
-        <attachment name="triggerAttachmentHero_of_Trolls_has_the_Equestrian-Baton" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmenTrolls-have-Equestrian-Baton-in-backpack"/>
-            <option name="support" value="supportAttachmentHero-of-Trolls-uses-Equestrian-Baton"/>
+        <attachment name="triggerAttachmentHero_of_Trolls_has_the_Assault-Baton" attachTo="Trolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmenTrolls-have-Assault-Baton-in-backpack"/>
+            <option name="support" value="supportAttachmentHero-of-Trolls-uses-Assault-Baton"/>
             <option name="when" value="after:TrollsEndTurn"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -44554,7 +44555,7 @@
             <heldUnits unitType="Caltrops-Item" player="Nature" quantity="1"/>
             <heldUnits unitType="Cavaliering-Item" player="Nature" quantity="1"/>
             <heldUnits unitType="Chain-of-Life-Item" player="Nature" quantity="1"/>
-            <heldUnits unitType="Equestrian-Baton-Item" player="Nature" quantity="1"/>
+            <heldUnits unitType="Assault-Baton-Item" player="Nature" quantity="1"/>
             <heldUnits unitType="Compendium-of-Creeps-Item" player="Nature" quantity="1"/>
             <heldUnits unitType="Crossbow-Tactics-Item" player="Nature" quantity="1"/>
             <heldUnits unitType="Crown-of-Kings-Item" player="Nature" quantity="1"/>
