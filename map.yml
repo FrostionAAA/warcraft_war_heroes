@@ -1,0 +1,3 @@
+map_name: warcraft_war_heroes
+games:
+- {game_name: 'Warcraft: War Heroes', file_name: warcraft_war_heroes.xml}
